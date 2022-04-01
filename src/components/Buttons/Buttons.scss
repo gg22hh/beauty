@@ -1,0 +1,16 @@
+.button__red {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+    text-transform: uppercase;
+    background-color: #d0202a;
+    border-radius: 36px;
+    padding: 10px 35px;
+    transition: all 0.3s;
+    border: 1px solid #d0202a;
+    &:hover {
+        background-color: #fff;
+        color: #d0202a;
+    }
+}
