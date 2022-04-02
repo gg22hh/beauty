@@ -25,11 +25,11 @@ export const Banner = () => {
                     <ul className="banner__connection">
                         <li className="banner__connection-item">
                             ул. Михалковская, 1/51, м. Коптево
-                            <a href="#">+7(495) 947-77-87</a>
+                            <a href="tel:+74959477787">+7(495) 947-77-87</a>
                         </li>
                         <li className="banner__connection-item">
                             Пятницкое шоссе, д.9 м. Митино, м. Волоколамская
-                            <a href="#">+7 (495) 925-12-11</a>
+                            <a href="tel:+94959251211">+7 (495) 925-12-11</a>
                         </li>
                     </ul>
                 </div>

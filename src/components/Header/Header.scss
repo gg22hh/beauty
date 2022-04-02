@@ -4,6 +4,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
+    }
+    &__navigation-item a {
+        z-index: 10;
     }
     &__navigation ul {
         display: flex;
@@ -11,10 +15,91 @@
         gap: 30px;
         font-size: 12px;
         text-transform: uppercase;
+        z-index: 10;
     }
     &__schedule {
         display: flex;
         gap: 40px;
         align-items: center;
+        z-index: 10;
+    }
+    .services__popup,
+    .cosmetology__popup {
+        padding-right: 12px;
+        position: relative;
+        cursor: pointer;
+    }
+    .cosmetology__popup-list {
+        position: absolute;
+        left: 0;
+        width: 175px;
+        display: flex;
+        flex-direction: column;
+        gap: 10;
+        text-align: center;
+        background-color: #fffae6;
+        padding: 17px;
+        top: 27px;
+        left: 0;
+        display: none;
+        opacity: 0;
+        transition: all 0.2s;
+        &-enter {
+            opacity: 0.01;
+            display: flex;
+            &-done {
+                display: flex;
+                opacity: 1;
+            }
+        }
+        &-exit {
+            opacity: 0.01;
+            display: flex;
+            &-done {
+                opacity: 0;
+            }
+        }
+    }
+    .services__popup-list {
+        position: absolute;
+        width: 175px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        background-color: #fffae6;
+        padding: 17px;
+        z-index: 3;
+        top: 27px;
+        left: 0;
+        display: none;
+        opacity: 0;
+        transition: all 0.2s;
+        &-enter {
+            opacity: 0.01;
+            display: flex;
+            &-done {
+                display: flex;
+                opacity: 1;
+            }
+        }
+        &-exit {
+            opacity: 0.01;
+            display: flex;
+            &-done {
+                opacity: 0;
+            }
+        }
+    }
+    .header__navigation-arrow {
+        background: url(../../shared/images/header/header-arrow.svg);
+        position: absolute;
+        width: 10px;
+        height: 5px;
+        margin: 5px 2px 0 0;
+        transition: all 0.3s;
+        &.active {
+            transform: rotate(-90deg);
+        }
     }
 }

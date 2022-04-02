@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.scss";
-import Logo from "../../shared/images/header-logo.png";
+import Logo from "../../shared/images/header/header-logo.png";
 import { HeaderNav } from "./components/HeaderNav";
 import { ButtonRed } from "../Buttons/ButtonRed";
 
