@@ -1,0 +1,53 @@
+.services {
+    padding: 130px 0;
+    &__title {
+        margin-bottom: 70px;
+    }
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-bottom: 70px;
+    }
+    &__item {
+        max-width: 270px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        &-title {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: uppercase;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #bebebe;
+        }
+        &-text {
+            font-size: 12px;
+            color: #656363;
+        }
+        &.wider {
+            max-width: 580px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+    .button__red {
+        padding: 17px 37px;
+    }
+    .button__white {
+        padding: 17px 107px;
+        color: black;
+        border: 1px solid black;
+        &:hover {
+            color: white;
+            border: 1px solid transparent;
+        }
+    }
+}
