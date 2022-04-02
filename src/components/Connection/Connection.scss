@@ -1,0 +1,42 @@
+.connection {
+    padding: 100px 0;
+    background-color: #d0202a;
+    color: white;
+    &__inner {
+        max-width: 715px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__text {
+        font-size: 16px;
+        max-width: 500px;
+        margin: 0 auto 60px;
+    }
+    &__form {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        & input {
+            padding: 21px 30px 23px;
+            background-color: #fff;
+            max-width: 400px;
+            width: 100%;
+            font-size: 14px;
+            outline: unset;
+            border-radius: 5px;
+            &::placeholder {
+                color: #656363;
+            }
+        }
+        & button {
+            padding: 23px 84px;
+            background-color: black;
+            color: white;
+            text-transform: uppercase;
+            border-radius: 52px;
+        }
+    }
+}
