@@ -2,8 +2,9 @@
     padding: 100px 0;
     &__inner {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 65px 178px;
+        grid-template-columns: repeat(3, 260px);
+        justify-content: space-between;
+        gap: 40px 70px;
     }
     &__title {
         margin-bottom: 70px;
@@ -20,5 +21,38 @@
             line-height: 20px;
             text-transform: uppercase;
         }
+    }
+}
+
+@media (max-width: 950px) {
+    .benefits {
+        padding: 50px 0;
+        &__title {
+            text-align: center;
+        }
+        &__inner {
+            grid-template-columns: repeat(2, 260px);
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 605px) {
+    .benefits {
+        &__title {
+            font-size: 44px;
+            line-height: 56px;
+            margin-bottom: 30px;
+        }
+        &__inner {
+            grid-template-columns: repeat(1, 260px);
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .benefits__title {
+        font-size: 29px;
+        line-height: 33px;
     }
 }
