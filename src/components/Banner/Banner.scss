@@ -1,5 +1,5 @@
 .banner {
-    background: url(../../shared/images/banner.jpg) no-repeat bottom;
+    background: url(../../shared/images/banner/banner.jpg) no-repeat bottom;
     background-size: cover;
     height: 636px;
     color: white;
@@ -46,6 +46,76 @@
             border: 1px solid white;
             a {
                 display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: 775px) {
+    .banner {
+        background: url(../../shared/images/banner/banner-adaptive.jpg)
+            no-repeat -960px;
+        height: 727px;
+        background-size: cover;
+        &__inner {
+            flex-direction: column;
+        }
+        &__info,
+        &__connection {
+            width: 100%;
+            padding: 50px 0 0;
+        }
+        &__info-title {
+            font-size: 44px;
+            line-height: 53px;
+        }
+        &__connection {
+            flex-direction: row;
+            &-item {
+                width: 280px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 465px) {
+    .banner {
+        height: 748px;
+        &__connection {
+            flex-direction: column;
+            margin: 0 auto;
+            padding-top: 40px;
+            &-item {
+                max-width: 465px;
+                width: 100%;
+            }
+        }
+        &__info-title {
+            font-size: 35px;
+            line-height: 40px;
+            margin-bottom: 15px;
+        }
+        &__info-text {
+            margin-bottom: 30px;
+        }
+        .button__red,
+        .button__white {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .banner {
+        &__info {
+            &-title {
+                font-size: 29px;
+                line-height: 33px;
+            }
+            &-text {
+                font-size: 12px;
+                line-height: 15px;
             }
         }
     }
