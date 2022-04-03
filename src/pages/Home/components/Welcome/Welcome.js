@@ -1,6 +1,6 @@
 import React from "react";
 import "./Welcome.scss";
-import welcomeImg from "../../shared/images/welcome.jpg";
+import welcomeImg from "../../../../shared/images/welcome.jpg";
 
 export const Welcome = () => {
     return (

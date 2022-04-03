@@ -1,5 +1,6 @@
 .banner {
-    background: url(../../shared/images/banner/banner.jpg) no-repeat bottom;
+    background: url(../../../../shared/images/banner/banner.jpg) no-repeat
+        bottom;
     background-size: cover;
     height: 636px;
     color: white;
@@ -53,7 +54,7 @@
 
 @media (max-width: 775px) {
     .banner {
-        background: url(../../shared/images/banner/banner-adaptive.jpg)
+        background: url(../../../../shared/images/banner/banner-adaptive.jpg)
             no-repeat -960px;
         height: 727px;
         background-size: cover;

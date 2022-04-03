@@ -1,7 +1,7 @@
 import React from "react";
 import "./Benefits.scss";
 import { BenefitsItem } from "./components/BenefitsItem";
-import { benefits } from "../../shared/projectData";
+import { benefits } from "../../../../shared/projectData";
 
 export const Benefits = () => {
     const benefitsList = benefits.map((item) => {

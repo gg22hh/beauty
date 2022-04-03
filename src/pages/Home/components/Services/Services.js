@@ -1,9 +1,9 @@
 import React from "react";
 import "./Services.scss";
 import { ServicesItem } from "./components/ServicesItem";
-import { services } from "../../shared/projectData";
-import { ButtonRed } from "../Buttons/ButtonRed";
-import { ButtonWhite } from "../Buttons/ButtonWhite";
+import { services } from "../../../../shared/projectData";
+import { ButtonRed } from "../../../../components/Buttons/ButtonRed";
+import { ButtonWhite } from "../../../../components/Buttons/ButtonWhite";
 
 export const Services = () => {
     const servicesList = services.map((item) => {

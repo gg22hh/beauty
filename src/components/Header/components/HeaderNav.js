@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { NavCosmetology } from "./HeaderLinks/NavCosmetology";
 import { NavServices } from "./HeaderLinks/NavServices";
 
@@ -22,13 +23,13 @@ export const HeaderNav = () => {
                     setServices={setServices}
                 />
                 <li className="header__navigation-item">
-                    <a href="/">портфолио</a>
+                    <Link to="/portfolio">портфолио</Link>
                 </li>
                 <li className="header__navigation-item">
-                    <a href="/">специалисты</a>
+                    <Link to="/specialisti">специалисты</Link>
                 </li>
                 <li className="header__navigation-item">
-                    <a href="/">акции</a>
+                    <Link to="/akcii">акции</Link>
                 </li>
             </ul>
         </nav>

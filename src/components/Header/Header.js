@@ -3,6 +3,7 @@ import "./Header.scss";
 import Logo from "../../shared/images/header/header-logo.png";
 import { HeaderNav } from "./components/HeaderNav";
 import { ButtonRed } from "../Buttons/ButtonRed";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
     const [menu, setMenu] = useState(false);
@@ -11,9 +12,9 @@ export const Header = () => {
         <div className="header">
             <div className="container">
                 <div className="header__inner">
-                    <a href="/" className="header__logo">
+                    <Link to="/" className="header__logo">
                         <img src={Logo} alt="Logo" />
-                    </a>
+                    </Link>
                     <div
                         className={
                             menu ? "header__info active" : "header__info"

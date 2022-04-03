@@ -1,6 +1,6 @@
 import React from "react";
-import { ButtonRed } from "../Buttons/ButtonRed";
-import { ButtonWhite } from "../Buttons/ButtonWhite";
+import { ButtonRed } from "../../../../components/Buttons/ButtonRed";
+import { ButtonWhite } from "../../../../components/Buttons/ButtonWhite";
 import "./Banner.scss";
 
 export const Banner = () => {

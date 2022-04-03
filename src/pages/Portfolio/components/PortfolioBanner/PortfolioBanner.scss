@@ -1,0 +1,50 @@
+.portfolioBanner {
+    background: url(../../../../shared/images/Portfolio//portfolioBanner.jpg)
+        no-repeat 60%;
+    background-size: cover;
+    height: 615px;
+    color: white;
+    &__inner {
+        padding-top: 100px;
+    }
+    &__title {
+        color: #fffae6;
+        max-width: 758px;
+        margin-bottom: 20px;
+    }
+    &__text {
+        max-width: 360px;
+        margin-bottom: 60px;
+    }
+    & .button__red {
+        margin-bottom: 15px;
+        padding: 17px 37px;
+    }
+}
+
+@media (max-width: 640px) {
+    .portfolioBanner {
+        background: url(../../../../shared/images/Portfolio/portfolioBanner-adaptive.jpg)
+            no-repeat right;
+        height: 567px;
+        &__inner {
+            padding-top: 80px;
+        }
+        &__title {
+            font-size: 44px;
+            line-height: 56px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .portfolioBanner__title {
+        font-size: 29px;
+        line-height: 33px;
+        margin-bottom: 30px;
+    }
+    .portfolioBanner__text {
+        margin-bottom: 110px;
+    }
+}
