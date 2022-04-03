@@ -1,0 +1,77 @@
+.stocksBenefits {
+    padding: 100px 0;
+    &__title {
+        margin-bottom: 70px;
+    }
+    &__inner {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        grid-template-columns: repeat(4, 310px);
+    }
+    &__item {
+        &-image {
+            margin-bottom: 15px;
+        }
+        &-text {
+            text-transform: uppercase;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 15px;
+        }
+        &-button {
+            margin: 0 auto;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 500;
+            padding: 15px 94px;
+            border: 1px solid black;
+            border-radius: 36px;
+            transition: all 0.3s;
+        }
+    }
+}
+
+@media (max-width: 1238px) {
+    .stocksBenefits__inner {
+        grid-template-columns: repeat(2, 400px);
+        gap: 70px;
+    }
+}
+
+@media (min-width: 1080px) {
+    .stocksBenefits__item-button:hover {
+        background-color: #d0202a;
+        border: 1px solid transparent;
+        color: white;
+    }
+}
+
+@media (max-width: 876px) {
+    .stocksBenefits {
+        padding: 50px 0;
+    }
+    .stocksBenefits__inner {
+        grid-template-columns: repeat(2, 310px);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    .stocksBenefits__inner {
+        grid-template-columns: repeat(1, 300px);
+        gap: 40px;
+    }
+    .stocksBenefits__title {
+        font-size: 44px;
+        line-height: 56px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 380px) {
+    .stocksBenefits__title {
+        font-size: 29px;
+        line-height: 33px;
+    }
+}

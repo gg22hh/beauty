@@ -23,13 +23,13 @@ export const HeaderNav = () => {
                     setServices={setServices}
                 />
                 <li className="header__navigation-item">
-                    <Link to="/portfolio">портфолио</Link>
+                    <Link to="/портфолио">портфолио</Link>
                 </li>
                 <li className="header__navigation-item">
-                    <Link to="/specialisti">специалисты</Link>
+                    <Link to="/специалисты">специалисты</Link>
                 </li>
                 <li className="header__navigation-item">
-                    <Link to="/akcii">акции</Link>
+                    <Link to="/акции">акции</Link>
                 </li>
             </ul>
         </nav>
