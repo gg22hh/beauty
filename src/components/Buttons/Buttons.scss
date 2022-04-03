@@ -9,10 +9,6 @@
     padding: 10px 35px;
     transition: all 0.3s;
     border: 1px solid #d0202a;
-    &:hover {
-        background-color: #fff;
-        color: #d0202a;
-    }
 }
 .button__white {
     font-weight: 600;
@@ -25,8 +21,15 @@
     padding: 16px 106px;
     transition: all 0.3s;
     border: 1px solid white;
-    &:hover {
+}
+
+@media (min-width: 1080px) {
+    .button__white:hover {
         background-color: #d0202a;
         border: 1px solid transparent;
+    }
+    .button__red:hover {
+        background-color: #fff;
+        color: #d0202a;
     }
 }
