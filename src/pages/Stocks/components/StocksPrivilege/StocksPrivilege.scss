@@ -1,0 +1,60 @@
+.stocksPrivilege {
+    padding: 100px 0;
+    &__title {
+        max-width: 615px;
+        margin-bottom: 70px;
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    &__item {
+        max-width: 364px;
+        text-align: center;
+        padding: 110px 65px;
+        border: 1px solid black;
+        border-radius: 50%;
+        &-title {
+            font-size: 32px;
+            line-height: 39px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 20px;
+            color: #d0202a;
+            text-transform: uppercase;
+            max-width: 190px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 1192px) {
+    .stocksPrivilege__inner {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 650px) {
+    .stocksPrivilege {
+        padding: 50px 0;
+    }
+    .stocksPrivilege__title {
+        font-size: 44px;
+        line-height: 56px;
+    }
+    .stocksPrivilege__item {
+        padding: 90px 55px;
+    }
+}
+
+@media (max-width: 380px) {
+    .stocksPrivilege__title {
+        font-size: 29px;
+        line-height: 33px;
+    }
+}

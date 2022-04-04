@@ -1,0 +1,52 @@
+.stocksAdvantage {
+    padding: 100px 0;
+    &__title {
+        margin-bottom: 70px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px 40px;
+        flex-wrap: wrap;
+    }
+    &__item {
+        max-width: 470px;
+        &-uptitle {
+            font-size: 60px;
+            line-height: 73px;
+            font-weight: 600;
+            color: #d0202a;
+            border-bottom: 1px solid #bebebe;
+            margin-bottom: 15px;
+        }
+        &-title {
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        &-text {
+            color: #656363;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .stocksAdvantage__inner {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .stocksAdvantage {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .stocksAdvantage__title {
+        font-size: 29px;
+        line-height: 33px;
+    }
+}
