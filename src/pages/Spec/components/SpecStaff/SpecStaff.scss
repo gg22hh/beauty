@@ -8,7 +8,7 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        gap: 50px 10px;
+        gap: 50px 50px;
         margin-bottom: 50px;
     }
     &__item {
@@ -63,6 +63,13 @@
     }
 }
 
+@media (max-width: 1199px) {
+    .specStaff__inner {
+        justify-content: center;
+        gap: 50px 70px;
+    }
+}
+
 @media (min-width: 1080px) {
     .specStaff__item-buttons .button__white:hover {
         color: white;
@@ -72,5 +79,15 @@
         color: white;
         background-color: #d0202a;
         border: 1px solid transparent;
+    }
+}
+
+@media (max-width: 385px) {
+    .specStaff__item-image {
+        text-align: center;
+        & img {
+            height: 300px;
+            width: 300px;
+        }
     }
 }

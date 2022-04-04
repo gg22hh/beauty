@@ -1,0 +1,69 @@
+.staffItem {
+    padding: 70px 0;
+    &__inner {
+        display: flex;
+        gap: 54px;
+        margin-bottom: 60px;
+    }
+    &__info {
+        max-width: 640px;
+    }
+    &__image img {
+        border-radius: 0 60% 0 0;
+    }
+    &__name {
+        margin-bottom: 10px;
+    }
+    &__position {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #d0202a;
+        margin-bottom: 40px;
+    }
+    &__skill {
+        margin-bottom: 15px;
+    }
+    &__button {
+        padding: 7px 30px;
+        border: 1px solid black;
+        border-radius: 10px;
+        transition: all 0.3s;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        & .button__red {
+            padding: 17px 37px;
+        }
+        & .button__white {
+            color: black;
+            border: 1px solid black;
+        }
+    }
+}
+
+@media (min-width: 1080px) {
+    .staffItem__buttons .button__white:hover {
+        color: white;
+        border: 1px solid transparent;
+    }
+    .staffItem__button:hover {
+        background-color: #d0202a;
+        color: white;
+        border: 1px solid transparent;
+    }
+}
+
+@media (max-width: 1076px) {
+    .staffItem__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .staffItem__buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
