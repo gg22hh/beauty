@@ -5,6 +5,7 @@ import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
 import { Home } from "./pages/Home/Home";
 import { Portfolio } from "./pages/Portfolio/Portfolio";
+import { Spec } from "./pages/Spec/Spec";
 import { Stocks } from "./pages/Stocks/Stocks";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
                 <Route exact path={"/"} component={Home} />
                 <Route path={"/портфолио"} component={Portfolio} />
                 <Route path={"/акции"} component={Stocks} />
+                <Route exact path={"/специалисты"} component={Spec} />
             </Switch>
             <Footer />
         </div>

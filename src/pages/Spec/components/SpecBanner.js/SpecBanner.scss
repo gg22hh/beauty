@@ -1,0 +1,27 @@
+.specBanner {
+    background: url(../../../../shared/images/Spec/spec-banner.jpg) no-repeat
+        60%;
+    background-size: cover;
+    height: 647px;
+    padding-top: 100px;
+    &__title {
+        color: #fffae6;
+        margin-bottom: 20px;
+        max-width: 800px;
+    }
+    &__text {
+        max-width: 440px;
+        color: white;
+        margin-bottom: 40px;
+    }
+    & .button__red {
+        padding: 16px 37px;
+        margin-bottom: 28px;
+    }
+}
+
+@media (max-width: 400px) {
+    .specBanner {
+        height: 540px;
+    }
+}
