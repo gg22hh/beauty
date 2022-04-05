@@ -8,7 +8,7 @@ export const ServicesPopup = () => {
                 <Link to="/стрижки">стрижки</Link>
             </li>
             <li>
-                <Link to="/">окрашивание</Link>
+                <Link to="/окрашивание">окрашивание</Link>
             </li>
             <li>
                 <Link to="/">уход</Link>

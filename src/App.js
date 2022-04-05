@@ -8,6 +8,7 @@ import { Home } from "./pages/Home/Home";
 import { Portfolio } from "./pages/Portfolio/Portfolio";
 import { Spec } from "./pages/Spec/Spec";
 import { Staff } from "./pages/Staff/Staff";
+import { Stainings } from "./pages/Staining/Staining";
 import { Stocks } from "./pages/Stocks/Stocks";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                 <Route path={"/акции"} component={Stocks} />
                 <Route exact path={"/специалисты"} component={Spec} />
                 <Route path={"/стрижки"} component={Haircuts} />
+                <Route path={"/окрашивание"} component={Stainings} />
                 <Staff />
             </Switch>
             <Footer />

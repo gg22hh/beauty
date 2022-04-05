@@ -1,4 +1,4 @@
-.haircutsBanner {
+.bannerItem {
     padding: 70px 0;
     &__inner {
         display: flex;
@@ -26,14 +26,14 @@
 }
 
 @media (min-width: 1080px) {
-    .haircutsBanner .button__white:hover {
+    .bannerItem .button__white:hover {
         border: 1px solid transparent;
         color: white;
     }
 }
 
 @media (max-width: 880px) {
-    .haircutsBanner {
+    .bannerItem {
         padding: 50px 0;
         &__inner {
             flex-direction: column-reverse;

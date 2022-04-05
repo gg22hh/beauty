@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const ServicesItem = ({ wider, image, title, text, href }) => {
     return (
-        <a
-            href={href}
+        <Link
+            to={href}
             className={wider ? "services__item wider" : "services__item"}
         >
             <div className="services__item-image">
@@ -11,6 +12,6 @@ export const ServicesItem = ({ wider, image, title, text, href }) => {
             </div>
             <div className="services__item-title">{title}</div>
             <div className="services__item-text">{text}</div>
-        </a>
+        </Link>
     );
 };
