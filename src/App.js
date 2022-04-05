@@ -3,6 +3,7 @@ import { Switch } from "react-router-dom";
 import "./App.scss";
 import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
+import { Haircuts } from "./pages/Haircuts/Haircuts";
 import { Home } from "./pages/Home/Home";
 import { Portfolio } from "./pages/Portfolio/Portfolio";
 import { Spec } from "./pages/Spec/Spec";
@@ -17,8 +18,8 @@ function App() {
                 <Route exact path={"/"} component={Home} />
                 <Route path={"/портфолио"} component={Portfolio} />
                 <Route path={"/акции"} component={Stocks} />
-
                 <Route exact path={"/специалисты"} component={Spec} />
+                <Route path={"/стрижки"} component={Haircuts} />
                 <Staff />
             </Switch>
             <Footer />

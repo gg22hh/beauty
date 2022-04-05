@@ -1,40 +1,41 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const ServicesPopup = () => {
     return (
         <ul className="services__popup-list">
             <li>
-                <a href="/">стрижки</a>
+                <Link to="/стрижки">стрижки</Link>
             </li>
             <li>
-                <a href="/">окрашивание</a>
+                <Link to="/">окрашивание</Link>
             </li>
             <li>
-                <a href="/">уход</a>
+                <Link to="/">уход</Link>
             </li>
             <li>
-                <a href="/">укладки</a>
+                <Link to="/">укладки</Link>
             </li>
             <li>
-                <a href="/">биозавивка</a>
+                <Link to="/">биозавивка</Link>
             </li>
             <li>
-                <a href="/">ногтевой сервис</a>
+                <Link to="/">ногтевой сервис</Link>
             </li>
             <li>
-                <a href="/">визаж</a>
+                <Link to="/">визаж</Link>
             </li>
             <li>
-                <a href="/">перманентный макияж</a>
+                <Link to="/">перманентный макияж</Link>
             </li>
             <li>
-                <a href="/">МАССАЖ</a>
+                <Link to="/">МАССАЖ</Link>
             </li>
             <li>
-                <a href="/">солярий</a>
+                <Link to="/">солярий</Link>
             </li>
             <li>
-                <a href="/">эндосфера</a>
+                <Link to="/">эндосфера</Link>
             </li>
         </ul>
     );

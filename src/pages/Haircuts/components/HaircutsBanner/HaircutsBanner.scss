@@ -1,0 +1,44 @@
+.haircutsBanner {
+    padding: 70px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info {
+        max-width: 562px;
+    }
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__text {
+        max-width: 340px;
+        color: #656363;
+        margin-bottom: 80px;
+    }
+    & .button__red {
+        padding: 17px 37px;
+        margin-bottom: 15px;
+    }
+    & .button__white {
+        color: black;
+        border: 1px solid black;
+    }
+}
+
+@media (min-width: 1080px) {
+    .haircutsBanner .button__white:hover {
+        border: 1px solid transparent;
+        color: white;
+    }
+}
+
+@media (max-width: 880px) {
+    .haircutsBanner {
+        padding: 50px 0;
+        &__inner {
+            flex-direction: column-reverse;
+            gap: 30px;
+            align-items: center;
+        }
+    }
+}

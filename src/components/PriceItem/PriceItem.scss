@@ -1,0 +1,32 @@
+.priceItem {
+    max-width: 580px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #bebebe;
+        margin-bottom: 7px;
+    }
+    &__text {
+        text-transform: uppercase;
+        color: #656363;
+    }
+}
+
+@media (max-width: 480px) {
+    .priceItem__header {
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .priceItem__title {
+        max-width: 170px;
+    }
+    .priceItem__text {
+        font-size: 12px;
+    }
+}
