@@ -12,6 +12,9 @@
         border-bottom: 1px solid #bebebe;
         margin-bottom: 7px;
     }
+    &__title {
+        max-width: 340px;
+    }
     &__text {
         text-transform: uppercase;
         color: #656363;

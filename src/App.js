@@ -11,6 +11,7 @@ import { Spec } from "./pages/Spec/Spec";
 import { Staff } from "./pages/Staff/Staff";
 import { Stainings } from "./pages/Staining/Staining";
 import { Stocks } from "./pages/Stocks/Stocks";
+import { Styling } from "./pages/Styling/Styling";
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
                 <Route path={"/стрижки"} component={Haircuts} />
                 <Route path={"/окрашивание"} component={Stainings} />
                 <Route path={"/уход"} component={Care} />
+                <Route path={"/укладки"} component={Styling} />
                 <Staff />
             </Switch>
             <Footer />
