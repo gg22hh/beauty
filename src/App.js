@@ -3,6 +3,7 @@ import { Switch } from "react-router-dom";
 import "./App.scss";
 import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
+import { Biowave } from "./pages/Biowave/Biowave";
 import { Care } from "./pages/Care/Care";
 import { Haircuts } from "./pages/Haircuts/Haircuts";
 import { Home } from "./pages/Home/Home";
@@ -26,6 +27,7 @@ function App() {
                 <Route path={"/окрашивание"} component={Stainings} />
                 <Route path={"/уход"} component={Care} />
                 <Route path={"/укладки"} component={Styling} />
+                <Route path={"/биозавивка"} component={Biowave} />
                 <Staff />
             </Switch>
             <Footer />
