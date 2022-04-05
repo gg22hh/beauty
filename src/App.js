@@ -7,6 +7,7 @@ import { Biowave } from "./pages/Biowave/Biowave";
 import { Care } from "./pages/Care/Care";
 import { Haircuts } from "./pages/Haircuts/Haircuts";
 import { Home } from "./pages/Home/Home";
+import { Manicure } from "./pages/Manicure/Manicure";
 import { Portfolio } from "./pages/Portfolio/Portfolio";
 import { Spec } from "./pages/Spec/Spec";
 import { Staff } from "./pages/Staff/Staff";
@@ -28,6 +29,7 @@ function App() {
                 <Route path={"/уход"} component={Care} />
                 <Route path={"/укладки"} component={Styling} />
                 <Route path={"/биозавивка"} component={Biowave} />
+                <Route path={"/ногтевойсервис"} component={Manicure} />
                 <Staff />
             </Switch>
             <Footer />
