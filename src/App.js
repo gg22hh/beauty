@@ -18,6 +18,7 @@ import { Staff } from "./pages/Staff/Staff";
 import { Stainings } from "./pages/Staining/Staining";
 import { Stocks } from "./pages/Stocks/Stocks";
 import { Styling } from "./pages/Styling/Styling";
+import { Therapy } from "./pages/Therapy/Therapy";
 
 function App() {
     return (
@@ -38,6 +39,7 @@ function App() {
                 <Route path={"/перманентныймакияж"} component={Permanent} />
                 <Route path={"/массаж"} component={Massage} />
                 <Route path={"/солярий"} component={Solarium} />
+                <Route path={"/эндосфера"} component={Therapy} />
                 <Staff />
             </Switch>
             <Footer />

@@ -1,0 +1,62 @@
+.therapyPrice__item {
+    padding: 50px 30px;
+    text-align: center;
+    max-width: 362px;
+    background-color: #f3edd6;
+    transition: all 0.2s;
+    cursor: pointer;
+    &-title {
+        max-width: 224px;
+        margin: 0 auto;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+        text-transform: uppercase;
+        color: #d0202a;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #bebebe;
+        margin-bottom: 15px;
+    }
+    &-text {
+        max-width: 265px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    &-time {
+        text-transform: uppercase;
+        color: #d0202a;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #bebebe;
+        margin-bottom: 60px;
+    }
+    &-price {
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+    &-button {
+        padding: 18px 70px;
+        background-color: #d0202a;
+        border-radius: 36px;
+        color: white;
+    }
+}
+
+@media (min-width: 768px) {
+    .therapyPrice__item:hover {
+        background-color: #d0202a;
+        color: #fffae6;
+        & .therapyPrice__item-title,
+        & .therapyPrice__item-time {
+            color: #fffae6;
+        }
+        & .therapyPrice__item-button {
+            background-color: #fffae6;
+            color: #d0202a;
+        }
+    }
+}
