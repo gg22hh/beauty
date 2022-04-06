@@ -999,3 +999,294 @@ export const faceProgramm = [
         price: "от 2500 Р",
     },
 ];
+
+export const intra = [
+    {
+        id: 1,
+        title: "Интралипотерапия MESOSCULPT C 71 (США) овал лица  ",
+        text: "",
+        price: "15000",
+    },
+    {
+        id: 2,
+        title: "Body Lypolitic + Organic Silicium 5.0",
+        text: "",
+        price: "3900",
+    },
+    {
+        id: 3,
+        title: "Celu Xtract  + Organic Silicium(целлюлит, «второй подбородок», отек 2,5",
+        text: "",
+        price: "3000",
+    },
+    {
+        id: 4,
+        title: "Celu Xtract  + Organic Silicium(целлюлит, «второй подбородок», отек 5,0",
+        text: "",
+        price: "3500",
+    },
+    {
+        id: 5,
+        title: "Aqualyx (1 флакон)",
+        text: "",
+        price: "6800",
+    },
+    {
+        id: 6,
+        title: "Органический крем мезо",
+        text: "",
+        price: "500",
+    },
+];
+
+export const bio = [
+    {
+        id: 1,
+        title: "REVOFIL AQUASHINE BR",
+        text: "",
+        price: "9900",
+    },
+    {
+        id: 2,
+        title: "AQUASHINE HA (Корея) 2.0 ml",
+        text: "",
+        price: "12000",
+    },
+    {
+        id: 3,
+        title: "AQUASHINE HABr (Корея) 2.0 ml",
+        text: "",
+        price: "9900",
+    },
+    {
+        id: 4,
+        title: "Meso Eye C71 (1.0 ml)",
+        text: "",
+        price: "14000",
+    },
+    {
+        id: 5,
+        title: "IAL-SYSTEM 1.1 ml",
+        text: "",
+        price: "8500",
+    },
+];
+
+export const mezo = [
+    {
+        id: 1,
+        title: "Dermaheal HSR",
+        text: "",
+        price: "4500",
+    },
+    {
+        id: 2,
+        title: "NCTF 135",
+        text: "",
+        price: "6500",
+    },
+    {
+        id: 3,
+        title: "Dermaheal HL",
+        text: "",
+        price: "4000",
+    },
+    {
+        id: 4,
+        title: "Dermaheal SB",
+        text: "",
+        price: "4300",
+    },
+    {
+        id: 5,
+        title: "Dermaheal MesoLine Refresh",
+        text: "",
+        price: "7200",
+    },
+    {
+        id: 6,
+        title: "Dermaheal MesoLine Shine",
+        text: "",
+        price: "7200",
+    },
+    {
+        id: 7,
+        title: "Dermaheal MesoLine Hair",
+        text: "",
+        price: "7200",
+    },
+];
+
+export const contur = [
+    {
+        id: 1,
+        title: "Канюля микро Softfil 25G № 20",
+        text: "",
+        price: "1000",
+    },
+    {
+        id: 2,
+        title: "Канюля микро Softfil 27G № 20",
+        text: "",
+        price: "1000",
+    },
+    {
+        id: 3,
+        title: "Juvederm Voluma (1.0 мл)",
+        text: "",
+        price: "15500",
+    },
+    {
+        id: 4,
+        title: "Juvederm ULTRA 4 (1,0мл)",
+        text: "",
+        price: "16000",
+    },
+    {
+        id: 5,
+        title: "Princess Filler 1 мл",
+        text: "",
+        price: "11500",
+    },
+    {
+        id: 6,
+        title: "Princess Voluma 1 мл",
+        text: "",
+        price: "11500",
+    },
+    {
+        id: 7,
+        title: "Juvederm Ultra Smile ",
+        text: "",
+        price: "12900",
+    },
+    {
+        id: 8,
+        title: "Neuramis volume",
+        text: "",
+        price: "5000",
+    },
+    {
+        id: 9,
+        title: "IAL-SYSTEM ACP 1.0 ml",
+        text: "",
+        price: "9000",
+    },
+    {
+        id: 10,
+        title: "IAL-SYSTEM DUO 1.0  ml",
+        text: "",
+        price: "9500",
+    },
+    {
+        id: 11,
+        title: "Juvederm Hydrate 1.0 ml",
+        text: "",
+        price: "14000",
+    },
+    {
+        id: 12,
+        title: "Meso-Whartom",
+        text: "",
+        price: "15000",
+    },
+    {
+        id: 13,
+        title: "Meso-Xsantin ",
+        text: "",
+        price: "15000",
+    },
+];
+
+export const biorev = [
+    {
+        id: 1,
+        title: "Биоревитализант PROFHILO 2.0 ml",
+        text: "",
+        price: "19500",
+    },
+    {
+        id: 2,
+        title: "Hyal Code Fine 0.5% 2.5 ml Hyal Code 1.5%  2.5 ml Hyal Code DMEA 3.1% 2.5 ml",
+        text: "",
+        price: "7600",
+    },
+    {
+        id: 3,
+        title: "Hyal Code 5 ml",
+        text: "",
+        price: "10000",
+    },
+    {
+        id: 4,
+        title: "Биоревитализация рук  ",
+        text: "",
+        price: "6500",
+    },
+    {
+        id: 5,
+        title: "REVOFIL AQUASHINE BR",
+        text: "",
+        price: "9900",
+    },
+    {
+        id: 6,
+        title: "AQUASHINE HA (Корея) 2.0 ml",
+        text: "",
+        price: "12000",
+    },
+    {
+        id: 7,
+        title: "AQUASHINE HABr (Корея) 2.0 ml",
+        text: "",
+        price: "9900",
+    },
+    {
+        id: 8,
+        title: "Meso Eye C71 (1.0 ml)",
+        text: "",
+        price: "14000",
+    },
+    {
+        id: 9,
+        title: "IAL-SYSTEM 1.1 ml",
+        text: "",
+        price: "8500",
+    },
+];
+
+export const botulin = [
+    {
+        id: 1,
+        title: "Лечение гипергидроза: Диспорт ",
+        text: "100 от 100 единиц",
+        price: "100",
+    },
+    {
+        id: 2,
+        title: "Инъекция Диспорт",
+        text: "1 единица",
+        price: "120",
+    },
+];
+
+export const plazmo = [
+    {
+        id: 1,
+        title: "Плазмолифтинг 1 пробирка ",
+        text: "",
+        price: "4200",
+    },
+    {
+        id: 2,
+        title: "Плазмолифтинг 4 пробирка",
+        text: "",
+        price: "3600",
+    },
+    {
+        id: 3,
+        title: "Плазмолифтинг 8 пробирка",
+        text: "",
+        price: "3200",
+    },
+];

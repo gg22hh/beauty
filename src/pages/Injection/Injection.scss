@@ -1,0 +1,17 @@
+.injection {
+    .bannerItem__inner {
+        flex-direction: row-reverse;
+    }
+}
+@media (max-width: 1014px) {
+    .injection {
+        .bannerItem {
+            padding: 50px 0;
+            &__inner {
+                flex-direction: column-reverse;
+                gap: 30px;
+                align-items: center;
+            }
+        }
+    }
+}

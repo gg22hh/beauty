@@ -1,16 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const CosmetologyPopup = () => {
     return (
         <ul className="cosmetology__popup-list">
             <li>
-                <a href="/">инъекционная косметология</a>
+                <Link to="/инъекционнаякосметология">
+                    инъекционная косметология
+                </Link>
             </li>
             <li>
-                <a href="/">эстетическая косметология</a>
+                <Link to="/эстетическаякосметология">
+                    эстетическая косметология
+                </Link>
             </li>
             <li>
-                <a href="/">аппаратная косметология</a>
+                <Link to="/аппаратнаякосметология">
+                    аппаратная косметология
+                </Link>
             </li>
         </ul>
     );
