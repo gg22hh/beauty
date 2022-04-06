@@ -3,6 +3,8 @@ import { Switch } from "react-router-dom";
 import "./App.scss";
 import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
+import { Aesthetic } from "./pages/Aesthetic/Aesthetic";
+import { Apparatus } from "./pages/Apparatus/Apparatus";
 import { Biowave } from "./pages/Biowave/Biowave";
 import { Care } from "./pages/Care/Care";
 import { Haircuts } from "./pages/Haircuts/Haircuts";
@@ -45,6 +47,11 @@ function App() {
                     path={"/инъекционнаякосметология"}
                     component={Injection}
                 />
+                <Route
+                    path={"/эстетическаякосметология"}
+                    component={Aesthetic}
+                />
+                <Route path={"/аппаратнаякосметология"} component={Apparatus} />
                 <Staff />
             </Switch>
             <Footer />
