@@ -924,3 +924,36 @@ export const wrapping = [
         text: "",
     },
 ];
+
+export const solarium = [
+    {
+        id: 1,
+        title: "Солярий 1минута",
+        price: "25",
+        text: "",
+    },
+    {
+        id: 2,
+        title: "Солярий от 100 минут",
+        price: "22",
+        text: "",
+    },
+    {
+        id: 3,
+        title: "Шапочка одноразовая",
+        price: "20",
+        text: "",
+    },
+    {
+        id: 4,
+        title: "Стикини",
+        price: "20",
+        text: "",
+    },
+    {
+        id: 5,
+        title: "Тапочки одноразовые",
+        price: "20",
+        text: "",
+    },
+];

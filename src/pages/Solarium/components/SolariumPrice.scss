@@ -1,0 +1,38 @@
+.solariumPrice {
+    padding: 70px 0;
+    &__inner {
+        padding: 30px 0 0;
+        border-bottom: 1px solid #bebebe;
+        border-top: 1px solid #bebebe;
+        margin-bottom: 50px;
+    }
+    &__image {
+        margin-bottom: 30px;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+    & .button__red {
+        padding: 17px 37px;
+    }
+    & .button__white {
+        color: black;
+        border: 1px solid black;
+    }
+}
+
+@media (min-width: 1080px) {
+    .solariumPrice .button__white:hover {
+        color: white;
+        border: 1px solid transparent;
+    }
+}
+
+@media (max-width: 600px) {
+    .solariumPrice__image img {
+        height: 300px;
+        object-fit: cover;
+    }
+}
