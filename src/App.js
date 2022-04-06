@@ -9,6 +9,7 @@ import { Haircuts } from "./pages/Haircuts/Haircuts";
 import { Home } from "./pages/Home/Home";
 import { Makeup } from "./pages/Makeup/Makeup";
 import { Manicure } from "./pages/Manicure/Manicure";
+import { Massage } from "./pages/Massage/Massage";
 import { Permanent } from "./pages/Permanent/Permanent";
 import { Portfolio } from "./pages/Portfolio/Portfolio";
 import { Spec } from "./pages/Spec/Spec";
@@ -34,6 +35,7 @@ function App() {
                 <Route path={"/ногтевойсервис"} component={Manicure} />
                 <Route path={"/визаж"} component={Makeup} />
                 <Route path={"/перманентныймакияж"} component={Permanent} />
+                <Route path={"/массаж"} component={Massage} />
                 <Staff />
             </Switch>
             <Footer />
