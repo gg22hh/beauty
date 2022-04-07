@@ -6,6 +6,7 @@ import { PortfolioItem } from "../../components/PortfolioItem/PortfolioItem";
 import aesthetic1 from "../../shared/images/Aesthetic/aesthetic1.jpg";
 import aesthetic2 from "../../shared/images/Aesthetic/aesthetic2.jpg";
 import aesthetic3 from "../../shared/images/Aesthetic/aesthetic3.jpg";
+import { AestheticPrice } from "./components/AestheticPrice";
 
 export const Aesthetic = () => {
     return (
@@ -28,6 +29,7 @@ export const Aesthetic = () => {
                 price2="от 1000 р"
                 price3="от 1100 р"
             />
+            <AestheticPrice />
         </>
     );
 };
