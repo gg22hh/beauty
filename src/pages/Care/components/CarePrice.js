@@ -1,9 +1,9 @@
 import React from "react";
 import "./CarePrice.scss";
-import { ButtonRed } from "../../../components/Buttons/ButtonRed";
 import { ButtonWhite } from "../../../components/Buttons/ButtonWhite";
 import { care } from "../../../shared/projectData";
 import { PriceItem } from "../../../components/PriceItem/PriceItem";
+import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 
 export const CarePrice = () => {
     const carePriceList = care.map((care) => {
@@ -18,7 +18,7 @@ export const CarePrice = () => {
                 <h1 className="carePrice__title">СТОИМОСТЬ</h1>
                 <div className="carePrice__list">{carePriceList}</div>
                 <div className="carePrice__buttons">
-                    <ButtonRed>получить скидку 20% на первый визит</ButtonRed>
+                    <ButtonSale>получить скидку 20% на первый визит</ButtonSale>
                     <ButtonWhite>записаться онлайн</ButtonWhite>
                 </div>
             </div>

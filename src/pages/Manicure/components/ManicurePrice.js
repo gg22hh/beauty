@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./ManicurePrice.scss";
 import { extension, manicure, pedicure } from "../../../shared/projectData";
 import { PriceItem } from "../../../components/PriceItem/PriceItem.js";
-import { ButtonRed } from "../../../components/Buttons/ButtonRed";
 import { ButtonWhite } from "../../../components/Buttons/ButtonWhite";
+import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 
 export const ManicurePrice = () => {
     const [showAll, setShowAll] = useState(false);
@@ -79,7 +79,7 @@ export const ManicurePrice = () => {
                     </ButtonWhite>
                 </button>
                 <div className="manicurePrice__buttons">
-                    <ButtonRed>получить скидку 20% на первый визит</ButtonRed>
+                    <ButtonSale>получить скидку 20% на первый визит</ButtonSale>
                     <ButtonWhite>записаться онлайн</ButtonWhite>
                 </div>
             </div>

@@ -2,8 +2,8 @@ import React from "react";
 import "./StainingPrice.scss";
 import { stainings } from "../../../shared/projectData";
 import { PriceItem } from "../../../components/PriceItem/PriceItem";
-import { ButtonRed } from "../../../components/Buttons/ButtonRed";
 import { ButtonWhite } from "../../../components/Buttons/ButtonWhite";
+import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 
 export const StainingPrice = () => {
     const stainingPriceList = stainings.map((staining) => {
@@ -26,7 +26,7 @@ export const StainingPrice = () => {
                 </div>
                 <div className="stainingPrice__list">{stainingPriceList}</div>
                 <div className="stainingPrice__buttons">
-                    <ButtonRed>получить скидку 20% на первый визит</ButtonRed>
+                    <ButtonSale>получить скидку 20% на первый визит</ButtonSale>
                     <ButtonWhite>записаться онлайн</ButtonWhite>
                 </div>
             </div>

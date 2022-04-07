@@ -1,10 +1,10 @@
 import React from "react";
 import "./SolariumPrice.scss";
-import { ButtonRed } from "../../../components/Buttons/ButtonRed";
 import { ButtonWhite } from "../../../components/Buttons/ButtonWhite";
 import { PriceItem } from "../../../components/PriceItem/PriceItem";
 import { solarium } from "../../../shared/projectData";
 import solariumPrice from "../../../shared/images/Solarium/solariumPrice.jpg";
+import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 
 export const SolariumPrice = () => {
     const solariumPriceList = solarium.map((sol) => {
@@ -25,7 +25,7 @@ export const SolariumPrice = () => {
                     </div>
                 </div>
                 <div className="manicurePrice__buttons">
-                    <ButtonRed>получить скидку 20% на первый визит</ButtonRed>
+                    <ButtonSale>получить скидку 20% на первый визит</ButtonSale>
                     <ButtonWhite>записаться онлайн</ButtonWhite>
                 </div>
             </div>

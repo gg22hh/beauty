@@ -7,6 +7,8 @@ import aesthetic1 from "../../shared/images/Aesthetic/aesthetic1.jpg";
 import aesthetic2 from "../../shared/images/Aesthetic/aesthetic2.jpg";
 import aesthetic3 from "../../shared/images/Aesthetic/aesthetic3.jpg";
 import { AestheticPrice } from "./components/AestheticPrice";
+import { Benefits } from "../Home/components/Benefits/Benefits";
+import { Connection } from "../Home/components/Connection/Connection";
 
 export const Aesthetic = () => {
     return (
@@ -30,6 +32,8 @@ export const Aesthetic = () => {
                 price3="от 1100 р"
             />
             <AestheticPrice />
+            <Benefits />
+            <Connection />
         </>
     );
 };

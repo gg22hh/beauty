@@ -1,5 +1,5 @@
 import React from "react";
-import { ButtonRed } from "../../../../components/Buttons/ButtonRed";
+import { ButtonSale } from "../../../../components/Buttons/ButtonSale";
 import { ButtonWhite } from "../../../../components/Buttons/ButtonWhite";
 import "./Banner.scss";
 
@@ -17,9 +17,9 @@ export const Banner = () => {
                             педикюр, косметология, перманентный макияж, массаж,
                             коррекция фигуры
                         </p>
-                        <ButtonRed>
+                        <ButtonSale>
                             получить скидку 20% на первый визит
-                        </ButtonRed>
+                        </ButtonSale>
                         <ButtonWhite>записаться онлайн</ButtonWhite>
                     </div>
                     <ul className="banner__connection">

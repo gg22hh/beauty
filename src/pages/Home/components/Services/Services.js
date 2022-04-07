@@ -2,8 +2,8 @@ import React from "react";
 import "./Services.scss";
 import { ServicesItem } from "./components/ServicesItem";
 import { services } from "../../../../shared/projectData";
-import { ButtonRed } from "../../../../components/Buttons/ButtonRed";
 import { ButtonWhite } from "../../../../components/Buttons/ButtonWhite";
+import { ButtonSale } from "../../../../components/Buttons/ButtonSale";
 
 export const Services = () => {
     const servicesList = services.map((item) => {
@@ -25,7 +25,7 @@ export const Services = () => {
                 <h2 className="services__title">Услуги</h2>
                 <div className="services__inner">{servicesList}</div>
                 <div className="services__buttons">
-                    <ButtonRed>получить скидку 20% на первый визит</ButtonRed>
+                    <ButtonSale>получить скидку 20% на первый визит</ButtonSale>
                     <ButtonWhite>записаться онлайн</ButtonWhite>
                 </div>
             </div>

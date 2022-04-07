@@ -1,8 +1,8 @@
 import React from "react";
 import "./StocksBanner.scss";
-import { ButtonRed } from "../../../../components/Buttons/ButtonRed";
 import { ButtonWhite } from "../../../../components/Buttons/ButtonWhite";
 import stocksBanner from "../../../../shared/images/Stocks/stocksBanner.svg";
+import { ButtonSale } from "../../../../components/Buttons/ButtonSale";
 
 export const StocksBanner = () => {
     return (
@@ -17,9 +17,9 @@ export const StocksBanner = () => {
                             Купите подарок онлайн себе или близким прямо сейчас!
                         </div>
                         <div className="stocksBanner__buttons">
-                            <ButtonRed>
+                            <ButtonSale>
                                 получить скидку 20% на первый визит
-                            </ButtonRed>
+                            </ButtonSale>
                             <ButtonWhite>записаться онлайн</ButtonWhite>
                         </div>
                     </div>

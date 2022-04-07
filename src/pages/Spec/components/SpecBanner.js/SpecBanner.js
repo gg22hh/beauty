@@ -1,7 +1,7 @@
 import React from "react";
 import "./SpecBanner.scss";
-import { ButtonRed } from "../../../../components/Buttons/ButtonRed";
 import { ButtonWhite } from "../../../../components/Buttons/ButtonWhite";
+import { ButtonSale } from "../../../../components/Buttons/ButtonSale";
 
 export const SpecBanner = () => {
     return (
@@ -15,7 +15,7 @@ export const SpecBanner = () => {
                     гарантируем качество услуг!
                 </div>
                 <div className="specBanner__buttons">
-                    <ButtonRed>получить скидку 20% на первый визит</ButtonRed>
+                    <ButtonSale>получить скидку 20% на первый визит</ButtonSale>
                     <ButtonWhite>записаться онлайн</ButtonWhite>
                 </div>
             </div>

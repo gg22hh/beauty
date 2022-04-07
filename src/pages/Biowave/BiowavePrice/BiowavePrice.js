@@ -1,9 +1,9 @@
 import React from "react";
 import "./BiowavePrice.scss";
-import { ButtonRed } from "../../../components/Buttons/ButtonRed";
 import { ButtonWhite } from "../../../components/Buttons/ButtonWhite";
 import { PriceItem } from "../../../components/PriceItem/PriceItem";
 import biowave1 from "../../../shared/images/Biowave/biowave1.jpg";
+import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 
 export const BiowavePrice = () => {
     return (
@@ -20,7 +20,7 @@ export const BiowavePrice = () => {
                     />
                 </div>
                 <div className="biowavePrice__buttons">
-                    <ButtonRed>получить скидку 20% на первый визит</ButtonRed>
+                    <ButtonSale>получить скидку 20% на первый визит</ButtonSale>
                     <ButtonWhite>записаться онлайн</ButtonWhite>
                 </div>
             </div>

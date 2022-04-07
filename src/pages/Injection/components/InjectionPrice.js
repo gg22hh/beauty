@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ButtonRed } from "../../../components/Buttons/ButtonRed";
+import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 import { ButtonWhite } from "../../../components/Buttons/ButtonWhite";
 import { PriceItem } from "../../../components/PriceItem/PriceItem";
 import {
@@ -134,7 +134,7 @@ export const InjectionPrice = () => {
                     </ButtonWhite>
                 </button>
                 <div className="manicurePrice__buttons">
-                    <ButtonRed>получить скидку 20% на первый визит</ButtonRed>
+                    <ButtonSale>получить скидку 20% на первый визит</ButtonSale>
                     <ButtonWhite>записаться онлайн</ButtonWhite>
                 </div>
             </div>
