@@ -6,6 +6,7 @@ import "./Apparatus.scss";
 import apparatus1 from "../../shared/images/Apparatus/apparatus1.jpg";
 import apparatus2 from "../../shared/images/Apparatus/apparatus2.jpg";
 import apparatus3 from "../../shared/images/Apparatus/apparatus3.jpg";
+import { ApparatusPrice } from "./components/ApparatusPrice";
 
 export const Apparatus = () => {
     return (
@@ -28,6 +29,7 @@ export const Apparatus = () => {
                 price2="от 2300 р"
                 price3="от 4200 р"
             />
+            <ApparatusPrice />
         </>
     );
 };

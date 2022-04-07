@@ -1290,3 +1290,60 @@ export const plazmo = [
         price: "3200",
     },
 ];
+
+export const wp = [
+    {
+        id: 1,
+        title: "Лицо (10мин)",
+        text: "",
+        price: "1500",
+    },
+    {
+        id: 2,
+        title: "Лицо, шея (15 мин) ",
+        text: "",
+        price: "1700",
+    },
+    {
+        id: 3,
+        title: "Лицо, шея, декольте (20 мин)  ",
+        text: "",
+        price: "2100",
+    },
+];
+
+export const rf = [
+    {
+        id: 1,
+        title: "Лицо (60 мин)",
+        text: "",
+        price: "3200",
+    },
+    {
+        id: 2,
+        title: "Лицо, шея, декольте (120 мин) ",
+        text: "",
+        price: "5200",
+    },
+    {
+        id: 3,
+        title: "Область вокруг глаз (15-20 мин)",
+        text: "",
+        price: "2300",
+    },
+];
+
+export const ir = [
+    {
+        id: 1,
+        title: "Лицо (40 мин)",
+        text: "",
+        price: "4200",
+    },
+    {
+        id: 2,
+        title: "Лицо, декольте (60 мин)",
+        text: "",
+        price: "6200",
+    },
+];
