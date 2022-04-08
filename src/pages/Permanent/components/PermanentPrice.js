@@ -1,6 +1,6 @@
 import React from "react";
+import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
 import { ButtonSale } from "../../../components/Buttons/ButtonSale";
-import { ButtonWhite } from "../../../components/Buttons/ButtonWhite";
 import { PriceItem } from "../../../components/PriceItem/PriceItem";
 import { permanent } from "../../../shared/projectData";
 
@@ -27,7 +27,7 @@ export const PermanentPrice = () => {
                 </div>
                 <div className="manicurePrice__buttons">
                     <ButtonSale>получить скидку 20% на первый визит</ButtonSale>
-                    <ButtonWhite>записаться онлайн</ButtonWhite>
+                    <ButtonEnroll>записаться онлайн</ButtonEnroll>
                 </div>
             </div>
         </section>

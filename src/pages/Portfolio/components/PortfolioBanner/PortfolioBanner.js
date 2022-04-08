@@ -1,7 +1,7 @@
 import React from "react";
 import "./PortfolioBanner.scss";
-import { ButtonWhite } from "../../../../components/Buttons/ButtonWhite";
 import { ButtonSale } from "../../../../components/Buttons/ButtonSale";
+import { ButtonEnroll } from "../../../../components/Buttons/ButtonEnroll";
 
 export const PortfolioBanner = () => {
     return (
@@ -20,7 +20,7 @@ export const PortfolioBanner = () => {
                         <ButtonSale>
                             получить скидку 20% на первый визит
                         </ButtonSale>
-                        <ButtonWhite>записаться онлайн</ButtonWhite>
+                        <ButtonEnroll>записаться онлайн</ButtonEnroll>
                     </div>
                 </div>
             </div>

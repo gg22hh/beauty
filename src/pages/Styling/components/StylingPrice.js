@@ -1,9 +1,9 @@
 import React from "react";
 import "./StylingPrice.scss";
-import { ButtonWhite } from "../../../components/Buttons/ButtonWhite";
 import { styling } from "../../../shared/projectData";
 import { PriceItem } from "../../../components/PriceItem/PriceItem";
 import { ButtonSale } from "../../../components/Buttons/ButtonSale";
+import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
 
 export const StylingPrice = () => {
     const stylingPriceList = styling.map((styling) => {
@@ -23,7 +23,7 @@ export const StylingPrice = () => {
                 <div className="stylingPrice__list">{stylingPriceList}</div>
                 <div className="stylingPrice__buttons">
                     <ButtonSale>получить скидку 20% на первый визит</ButtonSale>
-                    <ButtonWhite>записаться онлайн</ButtonWhite>
+                    <ButtonEnroll>записаться онлайн</ButtonEnroll>
                 </div>
             </div>
         </section>

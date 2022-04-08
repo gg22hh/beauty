@@ -1,9 +1,9 @@
 import React from "react";
 import "./Staff.scss";
 import { Link } from "react-router-dom";
-import { ButtonWhite } from "../../components/Buttons/ButtonWhite";
 import { Connection } from "../Home/components/Connection/Connection";
 import { ButtonSale } from "../../components/Buttons/ButtonSale";
+import { ButtonEnroll } from "../../components/Buttons/ButtonEnroll";
 
 export const StaffItem = ({
     image,
@@ -65,7 +65,7 @@ export const StaffItem = ({
                         <ButtonSale>
                             получить скидку 20% на первый визит
                         </ButtonSale>
-                        <ButtonWhite>записаться онлайн</ButtonWhite>
+                        <ButtonEnroll>записаться онлайн</ButtonEnroll>
                     </div>
                 </div>
             </section>

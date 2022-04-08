@@ -2,8 +2,8 @@ import React from "react";
 import { PriceItem } from "../../../../components/PriceItem/PriceItem";
 import "./HaircutsPrice.scss";
 import { haircuts } from "../../../../shared/projectData";
-import { ButtonWhite } from "../../../../components/Buttons/ButtonWhite";
 import { ButtonSale } from "../../../../components/Buttons/ButtonSale";
+import { ButtonEnroll } from "../../../../components/Buttons/ButtonEnroll";
 
 export const HaircutsPrice = () => {
     const haircutsPriceList = haircuts.map((haircut) => {
@@ -24,7 +24,7 @@ export const HaircutsPrice = () => {
                 <div className="haircutsPrice__list">{haircutsPriceList}</div>
                 <div className="haircutsPrice__buttons">
                     <ButtonSale>получить скидку 20% на первый визит</ButtonSale>
-                    <ButtonWhite>записаться онлайн</ButtonWhite>
+                    <ButtonEnroll>записаться онлайн</ButtonEnroll>
                 </div>
             </div>
         </section>

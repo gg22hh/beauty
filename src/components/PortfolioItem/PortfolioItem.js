@@ -1,6 +1,6 @@
 import React from "react";
 import "./PortfolioItem.scss";
-import { ButtonRed } from "../Buttons/ButtonRed";
+import { ButtonEnroll } from "../Buttons/ButtonEnroll";
 
 export const PortfolioItem = ({
     image1,
@@ -26,7 +26,7 @@ export const PortfolioItem = ({
                             {price1}
                         </div>
                         <div className="portfolioItem__item-button">
-                            <ButtonRed>записаться</ButtonRed>
+                            <ButtonEnroll color="red">записаться</ButtonEnroll>
                         </div>
                     </div>
                     <div className="portfolioItem__item">
@@ -38,7 +38,7 @@ export const PortfolioItem = ({
                             {price2}
                         </div>
                         <div className="portfolioItem__item-button">
-                            <ButtonRed>записаться</ButtonRed>
+                            <ButtonEnroll color="red">записаться</ButtonEnroll>
                         </div>
                     </div>
                     <div className="portfolioItem__item">
@@ -50,7 +50,7 @@ export const PortfolioItem = ({
                             {price3}
                         </div>
                         <div className="portfolioItem__item-button">
-                            <ButtonRed>записаться</ButtonRed>
+                            <ButtonEnroll color="red">записаться</ButtonEnroll>
                         </div>
                     </div>
                 </div>

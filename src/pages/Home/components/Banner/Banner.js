@@ -1,6 +1,6 @@
 import React from "react";
+import { ButtonEnroll } from "../../../../components/Buttons/ButtonEnroll";
 import { ButtonSale } from "../../../../components/Buttons/ButtonSale";
-import { ButtonWhite } from "../../../../components/Buttons/ButtonWhite";
 import "./Banner.scss";
 
 export const Banner = () => {
@@ -20,7 +20,7 @@ export const Banner = () => {
                         <ButtonSale>
                             получить скидку 20% на первый визит
                         </ButtonSale>
-                        <ButtonWhite>записаться онлайн</ButtonWhite>
+                        <ButtonEnroll>записаться онлайн</ButtonEnroll>
                     </div>
                     <ul className="banner__connection">
                         <li className="banner__connection-item">

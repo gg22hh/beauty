@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./Header.scss";
 import Logo from "../../shared/images/header/header-logo.png";
 import { HeaderNav } from "./components/HeaderNav";
-import { ButtonRed } from "../Buttons/ButtonRed";
 import { Link } from "react-router-dom";
+import { ButtonEnroll } from "../Buttons/ButtonEnroll";
 
 export const Header = () => {
     const [menu, setMenu] = useState(false);
@@ -23,7 +23,7 @@ export const Header = () => {
                         <HeaderNav />
                         <div className="header__schedule">
                             <span>ПН. - ВС. 10:00 - 22:00</span>
-                            <ButtonRed>записаться</ButtonRed>
+                            <ButtonEnroll color="red">записаться</ButtonEnroll>
                         </div>
                     </div>
                     <button

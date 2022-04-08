@@ -18,36 +18,24 @@ export const StocksBenefits = () => {
                             <img src={item1} alt="item1" />
                         </div>
                         <div className="stocksBenefits__item-text">3000 р</div>
-                        <button className="stocksBenefits__item-button">
-                            купить
-                        </button>
                     </div>
                     <div className="stocksBenefits__item">
                         <div className="stocksBenefits__item-image">
                             <img src={item2} alt="item1" />
                         </div>
                         <div className="stocksBenefits__item-text">5000 р</div>
-                        <button className="stocksBenefits__item-button">
-                            купить
-                        </button>
                     </div>
                     <div className="stocksBenefits__item">
                         <div className="stocksBenefits__item-image">
                             <img src={item3} alt="item1" />
                         </div>
                         <div className="stocksBenefits__item-text">10000 р</div>
-                        <button className="stocksBenefits__item-button">
-                            купить
-                        </button>
                     </div>
                     <div className="stocksBenefits__item">
                         <div className="stocksBenefits__item-image">
                             <img src={item4} alt="item1" />
                         </div>
                         <div className="stocksBenefits__item-text">15000 р</div>
-                        <button className="stocksBenefits__item-button">
-                            купить
-                        </button>
                     </div>
                 </div>
             </div>

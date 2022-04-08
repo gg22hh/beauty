@@ -1,7 +1,7 @@
 import React from "react";
 import "./BannerItem.scss";
-import { ButtonWhite } from "../Buttons/ButtonWhite";
 import { ButtonSale } from "../Buttons/ButtonSale";
+import { ButtonEnroll } from "../Buttons/ButtonEnroll";
 
 export const BannerItem = ({ title, text, image }) => {
     return (
@@ -15,7 +15,7 @@ export const BannerItem = ({ title, text, image }) => {
                             <ButtonSale>
                                 получить скидку 20% на первый визит
                             </ButtonSale>
-                            <ButtonWhite>записаться онлайн</ButtonWhite>
+                            <ButtonEnroll>записаться онлайн</ButtonEnroll>
                         </div>
                     </div>
                     <div className="bannerItem__image">

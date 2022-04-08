@@ -1,0 +1,65 @@
+.enroll input {
+    width: 100%;
+    margin: 0;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.form__wrapper {
+    cursor: pointer;
+    margin: 0 auto;
+    z-index: 101;
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    padding: 7px 15px;
+    border-radius: 5px 5px 0 0;
+    color: black;
+    &-items {
+        position: absolute;
+        width: 100%;
+        top: 32px;
+        left: 0;
+        background-color: #fff;
+        border-radius: 0 0 5px 5px;
+        max-height: 100px;
+        overflow-y: scroll;
+        text-align: left;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        text-transform: uppercase;
+    }
+}
+
+.form__wrapper2 {
+    cursor: pointer;
+    margin: 0 auto;
+    z-index: 100;
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    padding: 7px 15px;
+    border-radius: 5px 5px 0 0;
+    color: black;
+    &-items {
+        position: absolute;
+        width: 100%;
+        top: 32px;
+        left: 0;
+        background-color: #fff;
+        border-radius: 0 0 5px 5px;
+        text-align: left;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-transform: uppercase;
+    }
+}

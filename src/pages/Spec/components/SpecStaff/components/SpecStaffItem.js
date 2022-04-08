@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ButtonRed } from "../../../../../components/Buttons/ButtonRed";
+import { ButtonEnroll } from "../../../../../components/Buttons/ButtonEnroll";
 import { ButtonWhite } from "../../../../../components/Buttons/ButtonWhite";
 
 export const SpecStaffItem = ({
@@ -50,7 +50,7 @@ export const SpecStaffItem = ({
                 <Link to={`/специалисты/специалист${id}`}>
                     <ButtonWhite>О мастере</ButtonWhite>
                 </Link>
-                <ButtonRed>записаться</ButtonRed>
+                <ButtonEnroll color="red">записаться</ButtonEnroll>
             </div>
         </div>
     );

@@ -4,6 +4,7 @@ import { extension, manicure, pedicure } from "../../../shared/projectData";
 import { PriceItem } from "../../../components/PriceItem/PriceItem.js";
 import { ButtonWhite } from "../../../components/Buttons/ButtonWhite";
 import { ButtonSale } from "../../../components/Buttons/ButtonSale";
+import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
 
 export const ManicurePrice = () => {
     const [showAll, setShowAll] = useState(false);
@@ -80,7 +81,7 @@ export const ManicurePrice = () => {
                 </button>
                 <div className="manicurePrice__buttons">
                     <ButtonSale>получить скидку 20% на первый визит</ButtonSale>
-                    <ButtonWhite>записаться онлайн</ButtonWhite>
+                    <ButtonEnroll>записаться онлайн</ButtonEnroll>
                 </div>
             </div>
         </section>
