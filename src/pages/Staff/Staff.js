@@ -1,9 +1,13 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import { staff } from "../../shared/projectData";
+import { Loader } from "../../components/Loader/Loader";
+import { STAFF_URL } from "../../shared/constans";
+import { useDataFromServer } from "../../shared/hooks";
 import { StaffItem } from "./StaffItem";
 
 export const Staff = () => {
+    const [staff, loader] = useDataFromServer(STAFF_URL);
+
     const staffList = staff.map((item) => {
         return (
             <StaffItem
@@ -17,6 +21,7 @@ export const Staff = () => {
                 skill4={item.skill4}
                 skill5={item.skill5}
                 skill6={item.skill6}
+                loader={loader}
             />
         );
     });
@@ -29,5 +34,5 @@ export const Staff = () => {
         );
     });
 
-    return <>{routeList}</>;
+    return <>{loader ? <Loader /> : routeList}</>;
 };
