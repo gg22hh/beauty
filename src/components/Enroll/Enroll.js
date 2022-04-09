@@ -51,11 +51,7 @@ export const Enroll = ({ setShowForm }) => {
                             select={select}
                             selectItem2={selectItem2}
                         >
-                            <EnrollItems2
-                                // select={select}
-                                show2={show2}
-                                // selectItem2={selectItem2}
-                            />
+                            <EnrollItems2 show2={show2} />
                         </EnrollProvider>
                     </div>
                     <button type="submit" className="form__button">

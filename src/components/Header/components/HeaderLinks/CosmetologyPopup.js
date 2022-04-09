@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const CosmetologyPopup = () => {
     return (
-        <ul className="cosmetology__popup-list">
+        <>
             <li>
                 <Link to="/инъекционнаякосметология">
                     инъекционная косметология
@@ -19,6 +19,6 @@ export const CosmetologyPopup = () => {
                     аппаратная косметология
                 </Link>
             </li>
-        </ul>
+        </>
     );
 };

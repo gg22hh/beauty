@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const ServicesPopup = () => {
     return (
-        <ul className="services__popup-list">
+        <>
             <li>
                 <Link to="/стрижки">стрижки</Link>
             </li>
@@ -37,6 +37,6 @@ export const ServicesPopup = () => {
             <li>
                 <Link to="/эндосфера">эндосфера</Link>
             </li>
-        </ul>
+        </>
     );
 };

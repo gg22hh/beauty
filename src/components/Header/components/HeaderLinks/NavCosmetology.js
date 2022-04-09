@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { CSSTransition } from "react-transition-group";
 import { CosmetologyPopup } from "./CosmetologyPopup";
 
@@ -8,6 +8,7 @@ export const NavCosmetology = ({
     setServices,
     services,
 }) => {
+    const nodeRef = useRef(null);
     const nandleClick = () => {
         if (services) {
             setServices(false);
@@ -30,11 +31,14 @@ export const NavCosmetology = ({
                 }
             ></span>
             <CSSTransition
+                nodeRef={nodeRef}
                 in={cosmetology}
                 classNames="cosmetology__popup-list"
                 timeout={200}
             >
-                <CosmetologyPopup />
+                <ul ref={nodeRef} className="cosmetology__popup-list">
+                    <CosmetologyPopup />
+                </ul>
             </CSSTransition>
         </li>
     );
