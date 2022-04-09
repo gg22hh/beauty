@@ -338,7 +338,7 @@ export const care = [
         text: "",
     },
     {
-        id: 1,
+        id: 6,
         title: "Капиллярный пилинг для кожи головы KV-1	800	",
         price: "800",
         text: "",

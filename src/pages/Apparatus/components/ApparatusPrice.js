@@ -33,7 +33,7 @@ export const ApparatusPrice = () => {
     const irPriceList = ir.map((ir) => {
         return (
             <PriceItem
-                key={rf.id}
+                key={ir.id}
                 title={ir.title}
                 price={ir.price}
                 text={ir.text}
@@ -74,14 +74,14 @@ export const ApparatusPrice = () => {
                         </div>
                     </>
                 )}
-                <button
+                <div
                     onClick={() => setShowAll(!showAll)}
                     className="manicurePrice__button"
                 >
                     <ButtonWhite>
                         {showAll ? "Показать меньше" : "Показать еще"}
                     </ButtonWhite>
-                </button>
+                </div>
                 <div className="manicurePrice__buttons">
                     <ButtonSale>получить скидку 20% на первый визит</ButtonSale>
                     <ButtonEnroll>записаться онлайн</ButtonEnroll>

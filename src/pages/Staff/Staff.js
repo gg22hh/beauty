@@ -21,11 +21,11 @@ export const Staff = () => {
         );
     });
 
-    console.log(staffList);
-
     const routeList = staffList.map((page, index) => {
         return (
-            <Route path={`/специалисты/специалист${index + 1}`}>{page}</Route>
+            <Route key={index} path={`/специалисты/специалист${index + 1}`}>
+                {page}
+            </Route>
         );
     });
 

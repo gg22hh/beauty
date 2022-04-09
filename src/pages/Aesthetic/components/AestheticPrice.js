@@ -135,14 +135,14 @@ export const AestheticPrice = () => {
                         </div>
                     </>
                 )}
-                <button
+                <div
                     onClick={() => setShowAll(!showAll)}
                     className="manicurePrice__button"
                 >
                     <ButtonWhite>
                         {showAll ? "Показать меньше" : "Показать еще"}
                     </ButtonWhite>
-                </button>
+                </div>
                 <div className="manicurePrice__buttons">
                     <ButtonSale>получить скидку 20% на первый визит</ButtonSale>
                     <ButtonEnroll>записаться онлайн</ButtonEnroll>

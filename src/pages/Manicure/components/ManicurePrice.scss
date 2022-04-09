@@ -36,8 +36,10 @@
         border: 1px solid black;
     }
     &__button {
-        margin: 0 auto;
         margin-bottom: 20px;
+        & .button__white {
+            margin: 0 auto;
+        }
     }
 }
 

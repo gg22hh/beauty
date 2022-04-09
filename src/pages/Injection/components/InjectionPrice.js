@@ -30,7 +30,7 @@ export const InjectionPrice = () => {
     const bioPriceList = bio.map((item) => {
         return (
             <PriceItem
-                id={item.id}
+                key={item.id}
                 title={item.title}
                 text={item.text}
                 price={item.price}
@@ -41,7 +41,7 @@ export const InjectionPrice = () => {
     const mezoPriceList = mezo.map((item) => {
         return (
             <PriceItem
-                id={item.id}
+                key={item.id}
                 title={item.title}
                 text={item.text}
                 price={item.price}
@@ -52,7 +52,7 @@ export const InjectionPrice = () => {
     const conturPriceList = contur.map((item) => {
         return (
             <PriceItem
-                id={item.id}
+                key={item.id}
                 title={item.title}
                 text={item.text}
                 price={item.price}
@@ -63,7 +63,7 @@ export const InjectionPrice = () => {
     const borevPriceList = biorev.map((item) => {
         return (
             <PriceItem
-                id={item.id}
+                key={item.id}
                 title={item.title}
                 text={item.text}
                 price={item.price}
@@ -74,7 +74,7 @@ export const InjectionPrice = () => {
     const botulinPriceList = botulin.map((item) => {
         return (
             <PriceItem
-                id={item.id}
+                key={item.id}
                 title={item.title}
                 text={item.text}
                 price={item.price}
@@ -85,7 +85,7 @@ export const InjectionPrice = () => {
     const plazmoPriceList = plazmo.map((item) => {
         return (
             <PriceItem
-                id={item.id}
+                key={item.id}
                 title={item.title}
                 text={item.text}
                 price={item.price}
@@ -157,14 +157,14 @@ export const InjectionPrice = () => {
                         </div>
                     </>
                 )}
-                <button
+                <div
                     onClick={() => setShowAll(!showAll)}
                     className="manicurePrice__button"
                 >
                     <ButtonWhite>
                         {showAll ? "Показать меньше" : "Показать еще"}{" "}
                     </ButtonWhite>
-                </button>
+                </div>
                 <div className="manicurePrice__buttons">
                     <ButtonSale>получить скидку 20% на первый визит</ButtonSale>
                     <ButtonEnroll>записаться онлайн</ButtonEnroll>
