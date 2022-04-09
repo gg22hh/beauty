@@ -12,6 +12,7 @@ export const ManicurePrice = () => {
     const manicurePriceList = manicure.map((manicure) => {
         return (
             <PriceItem
+                key={manicure.id}
                 title={manicure.title}
                 price={manicure.price}
                 text={manicure.text}
@@ -22,6 +23,7 @@ export const ManicurePrice = () => {
     const pedicurePriceList = pedicure.map((pedicure) => {
         return (
             <PriceItem
+                key={pedicure.id}
                 title={pedicure.title}
                 text={pedicure.text}
                 price={pedicure.price}
@@ -32,6 +34,7 @@ export const ManicurePrice = () => {
     const extensionPriceList = extension.map((extension) => {
         return (
             <PriceItem
+                key={extension.id}
                 title={extension.title}
                 text={extension.text}
                 price={extension.price}

@@ -8,6 +8,7 @@ export const MakeupPrice = () => {
     const makeupPriceList = makeup.map((makeup) => {
         return (
             <PriceItem
+                key={makeup.id}
                 title={makeup.title}
                 text={makeup.text}
                 price={makeup.price}
@@ -17,7 +18,12 @@ export const MakeupPrice = () => {
 
     const browPriceList = brow.map((brow) => {
         return (
-            <PriceItem title={brow.title} text={brow.text} price={brow.price} />
+            <PriceItem
+                key={brow.id}
+                title={brow.title}
+                text={brow.text}
+                price={brow.price}
+            />
         );
     });
 

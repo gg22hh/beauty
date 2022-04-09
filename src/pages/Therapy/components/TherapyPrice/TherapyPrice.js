@@ -7,6 +7,7 @@ export const TherapyPrice = () => {
     const therapyPriceList = bodyProgramm.map((item) => {
         return (
             <TherapyPriceItem
+                key={item.id}
                 title={item.title}
                 price={item.price}
                 text={item.text}
@@ -17,6 +18,7 @@ export const TherapyPrice = () => {
     const therapyPriceList2 = faceProgramm.map((item) => {
         return (
             <TherapyPriceItem
+                key={item.id}
                 title={item.title}
                 price={item.price}
                 text={item.text}

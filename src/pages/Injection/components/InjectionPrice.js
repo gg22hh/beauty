@@ -19,6 +19,7 @@ export const InjectionPrice = () => {
     const intraPriceList = intra.map((intra) => {
         return (
             <PriceItem
+                key={intra.id}
                 title={intra.title}
                 text={intra.text}
                 price={intra.price}
@@ -28,37 +29,67 @@ export const InjectionPrice = () => {
 
     const bioPriceList = bio.map((item) => {
         return (
-            <PriceItem title={item.title} text={item.text} price={item.price} />
+            <PriceItem
+                id={item.id}
+                title={item.title}
+                text={item.text}
+                price={item.price}
+            />
         );
     });
 
     const mezoPriceList = mezo.map((item) => {
         return (
-            <PriceItem title={item.title} text={item.text} price={item.price} />
+            <PriceItem
+                id={item.id}
+                title={item.title}
+                text={item.text}
+                price={item.price}
+            />
         );
     });
 
     const conturPriceList = contur.map((item) => {
         return (
-            <PriceItem title={item.title} text={item.text} price={item.price} />
+            <PriceItem
+                id={item.id}
+                title={item.title}
+                text={item.text}
+                price={item.price}
+            />
         );
     });
 
     const borevPriceList = biorev.map((item) => {
         return (
-            <PriceItem title={item.title} text={item.text} price={item.price} />
+            <PriceItem
+                id={item.id}
+                title={item.title}
+                text={item.text}
+                price={item.price}
+            />
         );
     });
 
     const botulinPriceList = botulin.map((item) => {
         return (
-            <PriceItem title={item.title} text={item.text} price={item.price} />
+            <PriceItem
+                id={item.id}
+                title={item.title}
+                text={item.text}
+                price={item.price}
+            />
         );
     });
 
     const plazmoPriceList = plazmo.map((item) => {
         return (
-            <PriceItem title={item.title} text={item.text} price={item.price} />
+            <PriceItem
+                id={item.id}
+                title={item.title}
+                text={item.text}
+                price={item.price}
+            />
         );
     });
 

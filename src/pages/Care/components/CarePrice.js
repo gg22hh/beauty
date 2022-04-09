@@ -8,7 +8,12 @@ import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
 export const CarePrice = () => {
     const carePriceList = care.map((care) => {
         return (
-            <PriceItem title={care.title} price={care.price} text={care.text} />
+            <PriceItem
+                key={care.id}
+                title={care.title}
+                price={care.price}
+                text={care.text}
+            />
         );
     });
 

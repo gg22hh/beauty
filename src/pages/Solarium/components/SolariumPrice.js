@@ -9,7 +9,12 @@ import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
 export const SolariumPrice = () => {
     const solariumPriceList = solarium.map((sol) => {
         return (
-            <PriceItem title={sol.title} text={sol.text} price={sol.price} />
+            <PriceItem
+                key={sol.id}
+                title={sol.title}
+                text={sol.text}
+                price={sol.price}
+            />
         );
     });
 

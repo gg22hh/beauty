@@ -9,6 +9,7 @@ export const StainingPrice = () => {
     const stainingPriceList = stainings.map((staining) => {
         return (
             <PriceItem
+                key={staining.id}
                 title={staining.title}
                 price={staining.price}
                 text={staining.text}

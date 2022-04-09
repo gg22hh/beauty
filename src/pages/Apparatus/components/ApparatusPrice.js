@@ -9,15 +9,36 @@ export const ApparatusPrice = () => {
     const [showAll, setShowAll] = useState(false);
 
     const wpPriceList = wp.map((wp) => {
-        return <PriceItem title={wp.title} price={wp.price} text={wp.text} />;
+        return (
+            <PriceItem
+                key={wp.id}
+                title={wp.title}
+                price={wp.price}
+                text={wp.text}
+            />
+        );
     });
 
     const rfPriceList = rf.map((rf) => {
-        return <PriceItem title={rf.title} price={rf.price} text={rf.text} />;
+        return (
+            <PriceItem
+                key={rf.id}
+                title={rf.title}
+                price={rf.price}
+                text={rf.text}
+            />
+        );
     });
 
     const irPriceList = ir.map((ir) => {
-        return <PriceItem title={ir.title} price={ir.price} text={ir.text} />;
+        return (
+            <PriceItem
+                key={rf.id}
+                title={ir.title}
+                price={ir.price}
+                text={ir.text}
+            />
+        );
     });
 
     return (

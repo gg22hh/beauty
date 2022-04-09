@@ -17,37 +17,67 @@ export const AestheticPrice = () => {
 
     const cleaningPriceList = cleaning.map((item) => {
         return (
-            <PriceItem title={item.title} text={item.text} price={item.price} />
+            <PriceItem
+                key={item.id}
+                title={item.title}
+                text={item.text}
+                price={item.price}
+            />
         );
     });
 
     const facialsPriceList = facials.map((item) => {
         return (
-            <PriceItem title={item.title} text={item.text} price={item.price} />
+            <PriceItem
+                key={item.id}
+                title={item.title}
+                text={item.text}
+                price={item.price}
+            />
         );
     });
 
     const masksPriceList = masks.map((item) => {
         return (
-            <PriceItem title={item.title} text={item.text} price={item.price} />
+            <PriceItem
+                key={item.id}
+                title={item.title}
+                text={item.text}
+                price={item.price}
+            />
         );
     });
 
     const alginatePriceList = alginate.map((item) => {
         return (
-            <PriceItem title={item.title} text={item.text} price={item.price} />
+            <PriceItem
+                key={item.id}
+                title={item.title}
+                text={item.text}
+                price={item.price}
+            />
         );
     });
 
     const peelingPriceList = peeling.map((item) => {
         return (
-            <PriceItem title={item.title} text={item.text} price={item.price} />
+            <PriceItem
+                key={item.id}
+                title={item.title}
+                text={item.text}
+                price={item.price}
+            />
         );
     });
 
     const faceMassagePriceList = faceMassage.map((item) => {
         return (
-            <PriceItem title={item.title} text={item.text} price={item.price} />
+            <PriceItem
+                key={item.id}
+                title={item.title}
+                text={item.text}
+                price={item.price}
+            />
         );
     });
 

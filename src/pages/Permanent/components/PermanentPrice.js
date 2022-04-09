@@ -8,6 +8,7 @@ export const PermanentPrice = () => {
     const permanentPriceList = permanent.map((permanent) => {
         return (
             <PriceItem
+                key={permanent.id}
                 title={permanent.title}
                 text={permanent.text}
                 price={permanent.price}

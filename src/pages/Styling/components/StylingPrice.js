@@ -9,6 +9,7 @@ export const StylingPrice = () => {
     const stylingPriceList = styling.map((styling) => {
         return (
             <PriceItem
+                key={styling.id}
                 title={styling.title}
                 text={styling.text}
                 price={styling.price}

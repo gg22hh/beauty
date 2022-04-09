@@ -11,6 +11,7 @@ export const MassagePrice = () => {
     const massagePriceList = massage.map((massage) => {
         return (
             <PriceItem
+                key={massage.id}
                 title={massage.title}
                 text={massage.text}
                 price={massage.price}
@@ -20,7 +21,12 @@ export const MassagePrice = () => {
 
     const wrappingPriceList = wrapping.map((wrap) => {
         return (
-            <PriceItem title={wrap.title} text={wrap.text} price={wrap.price} />
+            <PriceItem
+                key={wrap.id}
+                title={wrap.title}
+                text={wrap.text}
+                price={wrap.price}
+            />
         );
     });
 
