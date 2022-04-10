@@ -16,7 +16,7 @@ export const services = [
         title: "Услуги стилиста",
         text: "Все виды стрижек, окрашивание, создание креативного образа",
         wider: false,
-        href: "/стрижки",
+        href: "/haircuts",
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ export const services = [
         title: "ногтевой сервис",
         text: "Маникюр, педикюр, покрытие Shellac и Blossom",
         wider: false,
-        href: "/ногтевойсервис",
+        href: "/manicure",
     },
     {
         id: 3,
@@ -32,7 +32,7 @@ export const services = [
         title: "визаж",
         text: "Вечерний, свадебный, повседневный макияж ",
         wider: true,
-        href: "/визаж",
+        href: "/makeup",
     },
     {
         id: 4,
@@ -40,7 +40,7 @@ export const services = [
         title: "брови и ресницы",
         text: "Ухоженные брови и ресницы за 1 процедуру. Подберем уникальную форму бровей",
         wider: true,
-        href: "/визаж",
+        href: "/makeup",
     },
     {
         id: 5,
@@ -48,7 +48,7 @@ export const services = [
         title: "массаж",
         text: "Классический, расслабляющий, спортивный и другие виды, а так же эндосфера",
         wider: false,
-        href: "/массаж",
+        href: "/massage",
     },
     {
         id: 6,
@@ -56,7 +56,7 @@ export const services = [
         title: "Косметология",
         text: "Эпиляция, депиляция, пилинги, уход и инъекции у проффесиональных мастеров",
         wider: false,
-        href: "/визаж",
+        href: "/aestheticcosmetology",
     },
     {
         id: 7,
@@ -64,7 +64,7 @@ export const services = [
         title: "солярий",
         text: "Подготивоться к отпуску или восполнить недостаток витамина D",
         wider: false,
-        href: "/солярий",
+        href: "/solarium",
     },
     {
         id: 8,
@@ -72,7 +72,7 @@ export const services = [
         title: "Коррекция фигуры lpg",
         text: "Аппаратные коррекции для безупречной фигуры",
         wider: false,
-        href: "/эндосфера",
+        href: "/endosphere",
     },
     {
         id: 9,
@@ -80,7 +80,7 @@ export const services = [
         title: "перманентный макияж",
         text: "Подчеркнем привлекательные черты или скроем недостатки",
         wider: true,
-        href: "/перманентныймакияж",
+        href: "/permanentmakeup",
     },
 ];
 

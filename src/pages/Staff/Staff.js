@@ -28,7 +28,7 @@ export const Staff = () => {
 
     const routeList = staffList.map((page, index) => {
         return (
-            <Route key={index} path={`/специалисты/специалист${index + 1}`}>
+            <Route key={index} path={`/specialists/specialist${index + 1}`}>
                 {page}
             </Route>
         );

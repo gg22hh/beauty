@@ -54,7 +54,7 @@ export const StaffItem = ({
                                 {skill6}
                             </div>
                             <Link
-                                to={"/специалисты"}
+                                to={"/specialists"}
                                 className="staffItem__button"
                             >
                                 Назад

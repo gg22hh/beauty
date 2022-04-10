@@ -5,37 +5,37 @@ export const ServicesPopup = () => {
     return (
         <>
             <li>
-                <Link to="/стрижки">стрижки</Link>
+                <Link to="/haircuts">стрижки</Link>
             </li>
             <li>
-                <Link to="/окрашивание">окрашивание</Link>
+                <Link to="/staining">окрашивание</Link>
             </li>
             <li>
-                <Link to="/уход">уход</Link>
+                <Link to="/care">уход</Link>
             </li>
             <li>
-                <Link to="/укладки">укладки</Link>
+                <Link to="/styling">укладки</Link>
             </li>
             <li>
-                <Link to="/биозавивка">биозавивка</Link>
+                <Link to="/biowave">биозавивка</Link>
             </li>
             <li>
-                <Link to="/ногтевойсервис">ногтевой сервис</Link>
+                <Link to="/manicure">ногтевой сервис</Link>
             </li>
             <li>
-                <Link to="/визаж">визаж</Link>
+                <Link to="/makeup">визаж</Link>
             </li>
             <li>
-                <Link to="/перманентныймакияж">перманентный макияж</Link>
+                <Link to="/permanentmakeup">перманентный макияж</Link>
             </li>
             <li>
-                <Link to="/массаж">МАССАЖ</Link>
+                <Link to="/massage">МАССАЖ</Link>
             </li>
             <li>
-                <Link to="/солярий">солярий</Link>
+                <Link to="/solarium">солярий</Link>
             </li>
             <li>
-                <Link to="/эндосфера">эндосфера</Link>
+                <Link to="/endosphere">эндосфера</Link>
             </li>
         </>
     );

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 export const useSelectItem = (initialValue) => {
     const [select, setSelect] = useState(initialValue);
@@ -30,4 +31,12 @@ export const useDataFromServer = (url) => {
     }, [url]);
 
     return [data, loader];
+};
+
+export const useScrollToTop = () => {
+    const history = useHistory();
+
+    useEffect(() => {
+        history.listen(() => window.scrollTo({ top: 0 }));
+    }, [history]);
 };

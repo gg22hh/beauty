@@ -5,19 +5,17 @@ export const CosmetologyPopup = () => {
     return (
         <>
             <li>
-                <Link to="/инъекционнаякосметология">
+                <Link to="/injectioncosmetology">
                     инъекционная косметология
                 </Link>
             </li>
             <li>
-                <Link to="/эстетическаякосметология">
+                <Link to="/aestheticcosmetology">
                     эстетическая косметология
                 </Link>
             </li>
             <li>
-                <Link to="/аппаратнаякосметология">
-                    аппаратная косметология
-                </Link>
+                <Link to="/hardwarecosmetology">аппаратная косметология</Link>
             </li>
         </>
     );

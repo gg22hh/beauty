@@ -47,7 +47,7 @@ export const SpecStaffItem = ({
                 {skill6}
             </div>
             <div className="specStaff__item-buttons">
-                <Link to={`/специалисты/специалист${id}`}>
+                <Link to={`/specialists/specialist${id}`}>
                     <ButtonWhite>О мастере</ButtonWhite>
                 </Link>
                 <ButtonEnroll color="red">записаться</ButtonEnroll>
