@@ -1,31 +1,12 @@
 import React from "react";
 import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
 import { ButtonSale } from "../../../components/Buttons/ButtonSale";
-import { PriceItem } from "../../../components/PriceItem/PriceItem";
+import { mapItem } from "../../../shared/functions";
 import { brow, makeup } from "../../../shared/projectData";
 
 export const MakeupPrice = () => {
-    const makeupPriceList = makeup.map((makeup) => {
-        return (
-            <PriceItem
-                key={makeup.id}
-                title={makeup.title}
-                text={makeup.text}
-                price={makeup.price}
-            />
-        );
-    });
-
-    const browPriceList = brow.map((brow) => {
-        return (
-            <PriceItem
-                key={brow.id}
-                title={brow.title}
-                text={brow.text}
-                price={brow.price}
-            />
-        );
-    });
+    const makeupPriceList = mapItem(makeup);
+    const browPriceList = mapItem(brow);
 
     return (
         <section className="manicurePrice">

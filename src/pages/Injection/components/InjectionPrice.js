@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
 import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 import { ButtonWhite } from "../../../components/Buttons/ButtonWhite";
-import { PriceItem } from "../../../components/PriceItem/PriceItem";
+import { mapItem } from "../../../shared/functions";
 import {
     bio,
     biorev,
@@ -16,82 +16,13 @@ import {
 export const InjectionPrice = () => {
     const [showAll, setShowAll] = useState(false);
 
-    const intraPriceList = intra.map((intra) => {
-        return (
-            <PriceItem
-                key={intra.id}
-                title={intra.title}
-                text={intra.text}
-                price={intra.price}
-            />
-        );
-    });
-
-    const bioPriceList = bio.map((item) => {
-        return (
-            <PriceItem
-                key={item.id}
-                title={item.title}
-                text={item.text}
-                price={item.price}
-            />
-        );
-    });
-
-    const mezoPriceList = mezo.map((item) => {
-        return (
-            <PriceItem
-                key={item.id}
-                title={item.title}
-                text={item.text}
-                price={item.price}
-            />
-        );
-    });
-
-    const conturPriceList = contur.map((item) => {
-        return (
-            <PriceItem
-                key={item.id}
-                title={item.title}
-                text={item.text}
-                price={item.price}
-            />
-        );
-    });
-
-    const borevPriceList = biorev.map((item) => {
-        return (
-            <PriceItem
-                key={item.id}
-                title={item.title}
-                text={item.text}
-                price={item.price}
-            />
-        );
-    });
-
-    const botulinPriceList = botulin.map((item) => {
-        return (
-            <PriceItem
-                key={item.id}
-                title={item.title}
-                text={item.text}
-                price={item.price}
-            />
-        );
-    });
-
-    const plazmoPriceList = plazmo.map((item) => {
-        return (
-            <PriceItem
-                key={item.id}
-                title={item.title}
-                text={item.text}
-                price={item.price}
-            />
-        );
-    });
+    const intraPriceList = mapItem(intra);
+    const bioPriceList = mapItem(bio);
+    const biorevPriceList = mapItem(biorev);
+    const botulinPriceList = mapItem(botulin);
+    const conturPriceList = mapItem(contur);
+    const mezoPriceList = mapItem(mezo);
+    const plazmoPriceList = mapItem(plazmo);
 
     return (
         <section className="manicurePrice">
@@ -136,7 +67,7 @@ export const InjectionPrice = () => {
                                 Биоревитализация
                             </div>
                             <div className="manicurePrice__item-list">
-                                {borevPriceList}
+                                {biorevPriceList}
                             </div>
                         </div>
                         <div className="manicurePrice__item">

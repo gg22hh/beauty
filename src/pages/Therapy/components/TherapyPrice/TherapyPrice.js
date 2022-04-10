@@ -1,30 +1,11 @@
 import React from "react";
+import { mapTherapyItem } from "../../../../shared/functions";
 import { bodyProgramm, faceProgramm } from "../../../../shared/projectData";
-import { TherapyPriceItem } from "../TherapyPriceItem/TherapyPriceItem";
 import "./TherapyPrice.scss";
 
 export const TherapyPrice = () => {
-    const therapyPriceList = bodyProgramm.map((item) => {
-        return (
-            <TherapyPriceItem
-                key={item.id}
-                title={item.title}
-                price={item.price}
-                text={item.text}
-            />
-        );
-    });
-
-    const therapyPriceList2 = faceProgramm.map((item) => {
-        return (
-            <TherapyPriceItem
-                key={item.id}
-                title={item.title}
-                price={item.price}
-                text={item.text}
-            />
-        );
-    });
+    const therapyPriceList = mapTherapyItem(bodyProgramm);
+    const therapyPriceList2 = mapTherapyItem(faceProgramm);
 
     return (
         <section className="therapyPrice">

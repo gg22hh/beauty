@@ -1,46 +1,17 @@
 import React, { useState } from "react";
 import "./ManicurePrice.scss";
 import { extension, manicure, pedicure } from "../../../shared/projectData";
-import { PriceItem } from "../../../components/PriceItem/PriceItem.js";
 import { ButtonWhite } from "../../../components/Buttons/ButtonWhite";
 import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
+import { mapItem } from "../../../shared/functions";
 
 export const ManicurePrice = () => {
     const [showAll, setShowAll] = useState(false);
 
-    const manicurePriceList = manicure.map((manicure) => {
-        return (
-            <PriceItem
-                key={manicure.id}
-                title={manicure.title}
-                price={manicure.price}
-                text={manicure.text}
-            />
-        );
-    });
-
-    const pedicurePriceList = pedicure.map((pedicure) => {
-        return (
-            <PriceItem
-                key={pedicure.id}
-                title={pedicure.title}
-                text={pedicure.text}
-                price={pedicure.price}
-            />
-        );
-    });
-
-    const extensionPriceList = extension.map((extension) => {
-        return (
-            <PriceItem
-                key={extension.id}
-                title={extension.title}
-                text={extension.text}
-                price={extension.price}
-            />
-        );
-    });
+    const manicurePriceList = mapItem(manicure);
+    const pedicurePriceList = mapItem(pedicure);
+    const extensionPriceList = mapItem(extension);
 
     return (
         <section className="manicurePrice">

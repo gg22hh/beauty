@@ -2,33 +2,14 @@ import React, { useState } from "react";
 import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
 import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 import { ButtonWhite } from "../../../components/Buttons/ButtonWhite";
-import { PriceItem } from "../../../components/PriceItem/PriceItem";
+import { mapItem } from "../../../shared/functions";
 import { massage, wrapping } from "../../../shared/projectData";
 
 export const MassagePrice = () => {
     const [showAll, setShowAll] = useState(false);
 
-    const massagePriceList = massage.map((massage) => {
-        return (
-            <PriceItem
-                key={massage.id}
-                title={massage.title}
-                text={massage.text}
-                price={massage.price}
-            />
-        );
-    });
-
-    const wrappingPriceList = wrapping.map((wrap) => {
-        return (
-            <PriceItem
-                key={wrap.id}
-                title={wrap.title}
-                text={wrap.text}
-                price={wrap.price}
-            />
-        );
-    });
+    const massagePriceList = mapItem(massage);
+    const wrappingPriceList = mapItem(wrapping);
 
     return (
         <section className="manicurePrice">

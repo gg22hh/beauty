@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
 import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 import { ButtonWhite } from "../../../components/Buttons/ButtonWhite";
-import { PriceItem } from "../../../components/PriceItem/PriceItem";
+import { mapItem } from "../../../shared/functions";
 import {
     alginate,
     cleaning,
@@ -15,71 +15,12 @@ import {
 export const AestheticPrice = () => {
     const [showAll, setShowAll] = useState(false);
 
-    const cleaningPriceList = cleaning.map((item) => {
-        return (
-            <PriceItem
-                key={item.id}
-                title={item.title}
-                text={item.text}
-                price={item.price}
-            />
-        );
-    });
-
-    const facialsPriceList = facials.map((item) => {
-        return (
-            <PriceItem
-                key={item.id}
-                title={item.title}
-                text={item.text}
-                price={item.price}
-            />
-        );
-    });
-
-    const masksPriceList = masks.map((item) => {
-        return (
-            <PriceItem
-                key={item.id}
-                title={item.title}
-                text={item.text}
-                price={item.price}
-            />
-        );
-    });
-
-    const alginatePriceList = alginate.map((item) => {
-        return (
-            <PriceItem
-                key={item.id}
-                title={item.title}
-                text={item.text}
-                price={item.price}
-            />
-        );
-    });
-
-    const peelingPriceList = peeling.map((item) => {
-        return (
-            <PriceItem
-                key={item.id}
-                title={item.title}
-                text={item.text}
-                price={item.price}
-            />
-        );
-    });
-
-    const faceMassagePriceList = faceMassage.map((item) => {
-        return (
-            <PriceItem
-                key={item.id}
-                title={item.title}
-                text={item.text}
-                price={item.price}
-            />
-        );
-    });
+    const cleaningPriceList = mapItem(cleaning);
+    const facialsPriceList = mapItem(facials);
+    const alginatePriceList = mapItem(alginate);
+    const masksPriceList = mapItem(masks);
+    const peelingPriceList = mapItem(peeling);
+    const faceMassagePriceList = mapItem(faceMassage);
 
     return (
         <section className="manicurePrice">

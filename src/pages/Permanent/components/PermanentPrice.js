@@ -1,20 +1,11 @@
 import React from "react";
 import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
 import { ButtonSale } from "../../../components/Buttons/ButtonSale";
-import { PriceItem } from "../../../components/PriceItem/PriceItem";
+import { mapItem } from "../../../shared/functions";
 import { permanent } from "../../../shared/projectData";
 
 export const PermanentPrice = () => {
-    const permanentPriceList = permanent.map((permanent) => {
-        return (
-            <PriceItem
-                key={permanent.id}
-                title={permanent.title}
-                text={permanent.text}
-                price={permanent.price}
-            />
-        );
-    });
+    const permanentPriceList = mapItem(permanent);
 
     return (
         <section className="manicurePrice">

@@ -1,22 +1,13 @@
 import React from "react";
 import "./SolariumPrice.scss";
-import { PriceItem } from "../../../components/PriceItem/PriceItem";
 import { solarium } from "../../../shared/projectData";
 import solariumPrice from "../../../shared/images/Solarium/solariumPrice.jpg";
 import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
+import { mapItem } from "../../../shared/functions";
 
 export const SolariumPrice = () => {
-    const solariumPriceList = solarium.map((sol) => {
-        return (
-            <PriceItem
-                key={sol.id}
-                title={sol.title}
-                text={sol.text}
-                price={sol.price}
-            />
-        );
-    });
+    const solariumPriceList = mapItem(solarium);
 
     return (
         <section className="solariumPrice">

@@ -1,21 +1,12 @@
 import React from "react";
 import "./CarePrice.scss";
 import { care } from "../../../shared/projectData";
-import { PriceItem } from "../../../components/PriceItem/PriceItem";
 import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
+import { mapItem } from "../../../shared/functions";
 
 export const CarePrice = () => {
-    const carePriceList = care.map((care) => {
-        return (
-            <PriceItem
-                key={care.id}
-                title={care.title}
-                price={care.price}
-                text={care.text}
-            />
-        );
-    });
+    const carePriceList = mapItem(care);
 
     return (
         <section className="carePrice">

@@ -2,44 +2,15 @@ import React, { useState } from "react";
 import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
 import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 import { ButtonWhite } from "../../../components/Buttons/ButtonWhite";
-import { PriceItem } from "../../../components/PriceItem/PriceItem";
+import { mapItem } from "../../../shared/functions";
 import { ir, rf, wp } from "../../../shared/projectData";
 
 export const ApparatusPrice = () => {
     const [showAll, setShowAll] = useState(false);
 
-    const wpPriceList = wp.map((wp) => {
-        return (
-            <PriceItem
-                key={wp.id}
-                title={wp.title}
-                price={wp.price}
-                text={wp.text}
-            />
-        );
-    });
-
-    const rfPriceList = rf.map((rf) => {
-        return (
-            <PriceItem
-                key={rf.id}
-                title={rf.title}
-                price={rf.price}
-                text={rf.text}
-            />
-        );
-    });
-
-    const irPriceList = ir.map((ir) => {
-        return (
-            <PriceItem
-                key={ir.id}
-                title={ir.title}
-                price={ir.price}
-                text={ir.text}
-            />
-        );
-    });
+    const wpPriceList = mapItem(wp);
+    const rfPriceList = mapItem(rf);
+    const irPriceList = mapItem(ir);
 
     return (
         <section className="manicurePrice">

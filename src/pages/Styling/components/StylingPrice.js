@@ -1,21 +1,12 @@
 import React from "react";
 import "./StylingPrice.scss";
 import { styling } from "../../../shared/projectData";
-import { PriceItem } from "../../../components/PriceItem/PriceItem";
 import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
+import { mapItem } from "../../../shared/functions";
 
 export const StylingPrice = () => {
-    const stylingPriceList = styling.map((styling) => {
-        return (
-            <PriceItem
-                key={styling.id}
-                title={styling.title}
-                text={styling.text}
-                price={styling.price}
-            />
-        );
-    });
+    const stylingPriceList = mapItem(styling);
 
     return (
         <section className="stylingPrice">

@@ -1,21 +1,12 @@
 import React from "react";
-import { PriceItem } from "../../../../components/PriceItem/PriceItem";
 import "./HaircutsPrice.scss";
 import { haircuts } from "../../../../shared/projectData";
 import { ButtonSale } from "../../../../components/Buttons/ButtonSale";
 import { ButtonEnroll } from "../../../../components/Buttons/ButtonEnroll";
+import { mapItem } from "../../../../shared/functions";
 
 export const HaircutsPrice = () => {
-    const haircutsPriceList = haircuts.map((haircut) => {
-        return (
-            <PriceItem
-                key={haircut.id}
-                title={haircut.title}
-                price={haircut.price}
-                text={haircut.text}
-            />
-        );
-    });
+    const haircutsPriceList = mapItem(haircuts);
 
     return (
         <section className="haircutsPrice">

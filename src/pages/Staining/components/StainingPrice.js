@@ -1,21 +1,12 @@
 import React from "react";
 import "./StainingPrice.scss";
 import { stainings } from "../../../shared/projectData";
-import { PriceItem } from "../../../components/PriceItem/PriceItem";
 import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
+import { mapItem } from "../../../shared/functions";
 
 export const StainingPrice = () => {
-    const stainingPriceList = stainings.map((staining) => {
-        return (
-            <PriceItem
-                key={staining.id}
-                title={staining.title}
-                price={staining.price}
-                text={staining.text}
-            />
-        );
-    });
+    const stainingPriceList = mapItem(stainings);
 
     return (
         <section className="stainingPrice">
