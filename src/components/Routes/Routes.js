@@ -19,6 +19,7 @@ import { Stocks } from "../../pages/Stocks/Stocks";
 import { Styling } from "../../pages/Styling/Styling";
 import { Therapy } from "../../pages/Therapy/Therapy";
 import { Staff } from "../../pages/Staff/Staff";
+import { Admin } from "../../pages/Admin/Admin";
 
 export const Routes = () => {
     return (
@@ -41,6 +42,7 @@ export const Routes = () => {
             <Route path={"/injectioncosmetology"} component={Injection} />
             <Route path={"/aestheticcosmetology"} component={Aesthetic} />
             <Route path={"/hardwarecosmetology"} component={Apparatus} />
+            <Route path={"/admin"} component={Admin} />
             <Staff />
         </>
     );

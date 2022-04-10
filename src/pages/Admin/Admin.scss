@@ -1,0 +1,66 @@
+.admin {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque;
+    z-index: 100;
+    overflow-y: scroll;
+}
+.adminPage {
+    &__title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__inner {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    &__item {
+        background-color: blanchedalmond;
+        padding: 17px;
+        box-shadow: 0px 0px 10px 3px gray;
+        border-radius: 10px;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 20px;
+        font-weight: 500;
+        &-title {
+            text-align: center;
+        }
+    }
+}
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25vh;
+    text-align: center;
+    &__title {
+        margin-bottom: 10px;
+    }
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        input {
+            max-width: 300px;
+            border: 1px solid gray;
+            padding: 7px 15px;
+            background-color: #fff;
+            outline: unset;
+        }
+        button {
+            padding: 7px 10px;
+            background-color: black;
+            border-radius: 10px;
+            color: white;
+        }
+    }
+}
