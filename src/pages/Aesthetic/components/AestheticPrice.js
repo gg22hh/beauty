@@ -3,17 +3,17 @@ import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
 import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 import { ButtonWhite } from "../../../components/Buttons/ButtonWhite";
 import { mapItem } from "../../../shared/functions";
-import {
-    alginate,
-    cleaning,
-    faceMassage,
-    facials,
-    masks,
-    peeling,
-} from "../../../shared/projectData";
+import { usePricesFromServer } from "../../../shared/hooks";
 
 export const AestheticPrice = () => {
     const [showAll, setShowAll] = useState(false);
+
+    const cleaning = usePricesFromServer("cleaning");
+    const facials = usePricesFromServer("facials");
+    const alginate = usePricesFromServer("alginate");
+    const masks = usePricesFromServer("masks");
+    const peeling = usePricesFromServer("peeling");
+    const faceMassage = usePricesFromServer("faceMassage");
 
     const cleaningPriceList = mapItem(cleaning);
     const facialsPriceList = mapItem(facials);

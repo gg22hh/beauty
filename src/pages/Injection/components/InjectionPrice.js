@@ -3,18 +3,18 @@ import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
 import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 import { ButtonWhite } from "../../../components/Buttons/ButtonWhite";
 import { mapItem } from "../../../shared/functions";
-import {
-    bio,
-    biorev,
-    botulin,
-    contur,
-    intra,
-    mezo,
-    plazmo,
-} from "../../../shared/projectData";
+import { usePricesFromServer } from "../../../shared/hooks";
 
 export const InjectionPrice = () => {
     const [showAll, setShowAll] = useState(false);
+
+    const intra = usePricesFromServer("intra");
+    const bio = usePricesFromServer("bio");
+    const biorev = usePricesFromServer("biorev");
+    const botulin = usePricesFromServer("botulin");
+    const contur = usePricesFromServer("contur");
+    const mezo = usePricesFromServer("mezo");
+    const plazmo = usePricesFromServer("plazmo");
 
     const intraPriceList = mapItem(intra);
     const bioPriceList = mapItem(bio);

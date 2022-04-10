@@ -1,13 +1,13 @@
 import React from "react";
 import "./CarePrice.scss";
-import { care } from "../../../shared/projectData";
 import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
 import { mapItem } from "../../../shared/functions";
+import { usePricesFromServer } from "../../../shared/hooks";
 
 export const CarePrice = () => {
-    const carePriceList = mapItem(care);
-
+    const list = usePricesFromServer("care");
+    const carePriceList = mapItem(list);
     return (
         <section className="carePrice">
             <div className="container">

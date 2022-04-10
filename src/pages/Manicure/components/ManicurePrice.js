@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import "./ManicurePrice.scss";
-import { extension, manicure, pedicure } from "../../../shared/projectData";
 import { ButtonWhite } from "../../../components/Buttons/ButtonWhite";
 import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
 import { mapItem } from "../../../shared/functions";
+import { usePricesFromServer } from "../../../shared/hooks";
 
 export const ManicurePrice = () => {
     const [showAll, setShowAll] = useState(false);
+
+    const manicure = usePricesFromServer("manicure");
+    const pedicure = usePricesFromServer("pedicure");
+    const extension = usePricesFromServer("extension");
 
     const manicurePriceList = mapItem(manicure);
     const pedicurePriceList = mapItem(pedicure);

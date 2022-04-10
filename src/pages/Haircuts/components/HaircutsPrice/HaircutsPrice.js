@@ -1,11 +1,13 @@
 import React from "react";
 import "./HaircutsPrice.scss";
-import { haircuts } from "../../../../shared/projectData";
 import { ButtonSale } from "../../../../components/Buttons/ButtonSale";
 import { ButtonEnroll } from "../../../../components/Buttons/ButtonEnroll";
 import { mapItem } from "../../../../shared/functions";
+import { usePricesFromServer } from "../../../../shared/hooks";
 
 export const HaircutsPrice = () => {
+    const haircuts = usePricesFromServer("haircuts");
+
     const haircutsPriceList = mapItem(haircuts);
 
     return (

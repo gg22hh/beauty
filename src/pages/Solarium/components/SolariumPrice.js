@@ -1,12 +1,14 @@
 import React from "react";
 import "./SolariumPrice.scss";
-import { solarium } from "../../../shared/projectData";
 import solariumPrice from "../../../shared/images/Solarium/solariumPrice.jpg";
 import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
 import { mapItem } from "../../../shared/functions";
+import { usePricesFromServer } from "../../../shared/hooks";
 
 export const SolariumPrice = () => {
+    const solarium = usePricesFromServer("solarium");
+
     const solariumPriceList = mapItem(solarium);
 
     return (

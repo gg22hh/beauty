@@ -40,3 +40,28 @@ export const useScrollToTop = () => {
         history.listen(() => window.scrollTo({ top: 0 }));
     }, [history]);
 };
+
+export const usePricesFromServer = (name) => {
+    const [list, setList] = useState([]);
+
+    useEffect(() => {
+        const getData = async () => {
+            const response = await fetch(
+                "https://622a3b7fbe12fc4538b614ed.mockapi.io/Prices"
+            );
+            if (response.ok) {
+                const json = await response.json();
+                const prices = json.filter((item) => {
+                    if (item.name === name) return item;
+                    return null;
+                });
+                setList(prices[0].data);
+            } else {
+                console.log("error");
+            }
+        };
+        getData();
+    }, [name]);
+
+    return list;
+};

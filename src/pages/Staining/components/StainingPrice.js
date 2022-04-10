@@ -1,11 +1,13 @@
 import React from "react";
 import "./StainingPrice.scss";
-import { stainings } from "../../../shared/projectData";
 import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
 import { mapItem } from "../../../shared/functions";
+import { usePricesFromServer } from "../../../shared/hooks";
 
 export const StainingPrice = () => {
+    const stainings = usePricesFromServer("stainings");
+
     const stainingPriceList = mapItem(stainings);
 
     return (

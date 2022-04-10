@@ -2,9 +2,12 @@ import React from "react";
 import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
 import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 import { mapItem } from "../../../shared/functions";
-import { brow, makeup } from "../../../shared/projectData";
+import { usePricesFromServer } from "../../../shared/hooks";
 
 export const MakeupPrice = () => {
+    const makeup = usePricesFromServer("makeup");
+    const brow = usePricesFromServer("brow");
+
     const makeupPriceList = mapItem(makeup);
     const browPriceList = mapItem(brow);
 

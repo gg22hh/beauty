@@ -1,9 +1,12 @@
 import React from "react";
 import { mapTherapyItem } from "../../../../shared/functions";
-import { bodyProgramm, faceProgramm } from "../../../../shared/projectData";
+import { usePricesFromServer } from "../../../../shared/hooks";
 import "./TherapyPrice.scss";
 
 export const TherapyPrice = () => {
+    const bodyProgramm = usePricesFromServer("bodyProgramm");
+    const faceProgramm = usePricesFromServer("faceProgramm");
+
     const therapyPriceList = mapTherapyItem(bodyProgramm);
     const therapyPriceList2 = mapTherapyItem(faceProgramm);
 

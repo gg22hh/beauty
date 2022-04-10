@@ -3,10 +3,13 @@ import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
 import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 import { ButtonWhite } from "../../../components/Buttons/ButtonWhite";
 import { mapItem } from "../../../shared/functions";
-import { massage, wrapping } from "../../../shared/projectData";
+import { usePricesFromServer } from "../../../shared/hooks";
 
 export const MassagePrice = () => {
     const [showAll, setShowAll] = useState(false);
+
+    const massage = usePricesFromServer("massage");
+    const wrapping = usePricesFromServer("wrapping");
 
     const massagePriceList = mapItem(massage);
     const wrappingPriceList = mapItem(wrapping);

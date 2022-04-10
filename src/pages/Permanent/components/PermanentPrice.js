@@ -2,9 +2,11 @@ import React from "react";
 import { ButtonEnroll } from "../../../components/Buttons/ButtonEnroll";
 import { ButtonSale } from "../../../components/Buttons/ButtonSale";
 import { mapItem } from "../../../shared/functions";
-import { permanent } from "../../../shared/projectData";
+import { usePricesFromServer } from "../../../shared/hooks";
 
 export const PermanentPrice = () => {
+    const permanent = usePricesFromServer("permanent");
+
     const permanentPriceList = mapItem(permanent);
 
     return (
