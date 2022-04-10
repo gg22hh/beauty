@@ -5,17 +5,21 @@ import { ButtonWhite } from "./ButtonWhite";
 
 export const ButtonEnroll = ({ children, color = "white" }) => {
     const [showForm, setShowForm] = useState(false);
+    const openEnrollForm = () => {
+        setShowForm(true);
+        document.body.style.overflow = "hidden";
+    };
 
     return (
         <>
             {color === "red" && (
-                <div onClick={() => setShowForm(true)} className="button__sale">
+                <div onClick={openEnrollForm} className="button__sale">
                     <ButtonRed>{children}</ButtonRed>
                 </div>
             )}
 
             {color === "white" && (
-                <div onClick={() => setShowForm(true)} className="button__sale">
+                <div onClick={openEnrollForm} className="button__sale">
                     <ButtonWhite>{children}</ButtonWhite>
                 </div>
             )}

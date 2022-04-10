@@ -10,19 +10,21 @@ export const Enroll = ({ setShowForm }) => {
         useSelectItem("Выберите категорию");
     const [select2, show2, setShow2, selectItem2] = useSelectItem("Выберите");
 
+    const closeEnrollForm = () => {
+        setShowForm(false);
+        document.body.style.overflow = "unset";
+    };
+
     const submitForm = (e) => {
         e.preventDefault();
-        setShowForm(false);
+        closeEnrollForm();
     };
 
     return (
         <>
             <div className="form enroll">
                 <form onSubmit={submitForm}>
-                    <div
-                        onClick={() => setShowForm(false)}
-                        className="form__close"
-                    >
+                    <div onClick={closeEnrollForm} className="form__close">
                         &#10008;
                     </div>
                     <div className="form__title">Запись онлайн</div>
@@ -59,10 +61,7 @@ export const Enroll = ({ setShowForm }) => {
                     </button>
                 </form>
             </div>
-            <div
-                onClick={() => setShowForm(false)}
-                className="form__overlay"
-            ></div>
+            <div onClick={closeEnrollForm} className="form__overlay"></div>
         </>
     );
 };

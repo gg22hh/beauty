@@ -8,6 +8,12 @@ import { ButtonEnroll } from "../Buttons/ButtonEnroll";
 export const Header = () => {
     const [menu, setMenu] = useState(false);
 
+    if (menu) {
+        document.body.style.overflow = "hidden";
+    } else {
+        document.body.style.overflow = "unset";
+    }
+
     return (
         <div className="header">
             <div className="container">
