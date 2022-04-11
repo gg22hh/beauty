@@ -33,6 +33,23 @@ export const useDataFromServer = (url) => {
     return [data, loader];
 };
 
+export const useEnrollFromServer = (url) => {
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        const getData = async () => {
+            const response = await fetch(url);
+            if (response.ok) {
+                const json = await response.json();
+                setData(json);
+            }
+        };
+        getData();
+    }, [url]);
+
+    return [data, setData];
+};
+
 export const useScrollToTop = () => {
     const history = useHistory();
 

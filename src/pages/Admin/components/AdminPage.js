@@ -1,20 +1,22 @@
 import React from "react";
-import { useDataFromServer } from "../../../shared/hooks";
+import { ENROLL_URL } from "../../../shared/constans";
+import { useEnrollFromServer } from "../../../shared/hooks";
 import { AdminPageItem } from "./AdminPageItem";
 
 export const AdminPage = () => {
-    const [list] = useDataFromServer(
-        "https://622a3b7fbe12fc4538b614ed.mockapi.io/Enrolls"
-    );
-    const enrollList = list.map((item) => {
+    const [list, setList] = useEnrollFromServer(ENROLL_URL);
+    const enrollList = list.map((item, pos) => {
         return (
             <AdminPageItem
                 key={item.id}
                 id={item.id}
+                pos={pos}
                 name={item.name}
                 surname={item.surname}
                 phone={item.phone}
                 service={item.service}
+                setList={setList}
+                list={list}
             />
         );
     });
